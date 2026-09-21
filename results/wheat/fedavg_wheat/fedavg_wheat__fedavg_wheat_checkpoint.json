@@ -1,0 +1,7 @@
+{
+  "algorithm": "FedAvg",
+  "dataset": "Wheat",
+  "last_completed_round": 10,
+  "total_rounds": 10,
+  "weights_file": "/kaggle/working/fedavg_wheat/fedavg_wheat_global_weights.pt"
+}

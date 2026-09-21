@@ -1,0 +1,38 @@
+Device: cuda:0
+Loading Wheat dataset (train/ subfolder only)...
+Classes (15): ['Aphid', 'Black Rust', 'Blast', 'Brown Rust', 'Common Root Rot', 'Fusarium Head Blight', 'Healthy', 'Leaf Blight', 'Mildew', 'Mite', 'Septoria', 'Smut', 'Stem fly', 'Tan spot', 'Yellow Rust']
+Train samples: 10484 | Val samples: 2620
+  Client 0: 1506 samples
+  Client 1: 2039 samples
+  Client 2: 2957 samples
+  Client 3: 2643 samples
+  Client 4: 1339 samples
+Downloading: "https://download.pytorch.org/models/resnet18-f37072fd.pth" to /root/.cache/torch/hub/checkpoints/resnet18-f37072fd.pth
+
+
+
+Starting FedAvg from round 1 to 10...
+
+[Round 001/10] Acc: 0.6412 | Prec: 0.7028 | Rec: 0.5898 | F1: 0.5935
+[Round 002/10] Acc: 0.7435 | Prec: 0.7556 | Rec: 0.7121 | F1: 0.7210
+[Round 003/10] Acc: 0.7927 | Prec: 0.7875 | Rec: 0.7633 | F1: 0.7711
+[Round 004/10] Acc: 0.8122 | Prec: 0.8092 | Rec: 0.7854 | F1: 0.7918
+[Round 005/10] Acc: 0.8240 | Prec: 0.8173 | Rec: 0.7998 | F1: 0.8057
+[Round 006/10] Acc: 0.8271 | Prec: 0.8187 | Rec: 0.8040 | F1: 0.8085
+[Round 007/10] Acc: 0.8355 | Prec: 0.8256 | Rec: 0.8128 | F1: 0.8166
+[Round 008/10] Acc: 0.8359 | Prec: 0.8266 | Rec: 0.8141 | F1: 0.8182
+[Round 009/10] Acc: 0.8389 | Prec: 0.8317 | Rec: 0.8187 | F1: 0.8227
+[Round 010/10] Acc: 0.8466 | Prec: 0.8356 | Rec: 0.8270 | F1: 0.8293
+
+FedAvg training complete for Wheat dataset.
+Results CSV : /kaggle/working/fedavg_wheat/fedavg_wheat_results.csv
+Checkpoint  : /kaggle/working/fedavg_wheat/fedavg_wheat_checkpoint.json
+Confusion matrices: /kaggle/working/fedavg_wheat/confusion_matrices
+/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+  cells[i][c] = re.sub('\\\\\|', '|', cell)
+/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+[NbConvertApp] Writing 23533 bytes to __notebook__.ipynb
+[NbConvertApp] Converting notebook __notebook__.ipynb to html
+[NbConvertApp] Writing 345550 bytes to __results__.html

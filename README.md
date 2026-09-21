@@ -4,7 +4,7 @@ Code and experiment logs for the manuscript **"Decentralized Intelligence for Cr
 
 The study compares four federated learning (FL) algorithms, **FedAvg**, **FedProx**, **FedMA** and **FedOpt**, for image-based plant disease classification on five public datasets, with data partitioned across clients in a non-IID way to mimic farms in different locations.
 
-> **Status:** manuscript under review. Three further runs (FedAvg and FedMA on Wheat, FedMA on PlantVillage) are being re-executed and will be added to this repository.
+> **Status:** manuscript under review.
 
 ## Repository structure
 
@@ -36,7 +36,7 @@ Metrics are the global model's accuracy, and macro-averaged precision, recall an
 
 ## Results
 
-FedAvg, FedProx and FedMA are reported at **communication round 10**; they converge within 10 rounds, and training beyond that was not needed. For example, FedAvg on Potato reached 0.9861 accuracy at round 10 and 0.9838 at round 50. FedOpt did not give good results at 10 rounds (accuracy 0.44–0.82), so it is reported at **round 50**.
+FedAvg, FedProx and FedMA are reported at **communication round 10**; they converge within 10 rounds, and training beyond that was not needed. For example, FedAvg on Potato reached 0.9861 accuracy at round 10 and 0.9838 at round 50. FedOpt did not give good results at 10 rounds (accuracy 0.44–0.82), so it is reported at **round 50** (on Wheat its training diverged and the round-10 value is shown).
 
 | Dataset | Algorithm | Notebook | Round | Accuracy | Precision | Recall | F1 |
 |---|---|---|---|---|---|---|---|
@@ -44,7 +44,9 @@ FedAvg, FedProx and FedMA are reported at **communication round 10**; they conve
 | Cotton | FedProx | [`fedavg_fedprox_cotton.ipynb`](notebooks/cotton/fedavg_fedprox_cotton.ipynb) | 10 | 0.9948 | 0.9948 | 0.9948 | 0.9948 |
 | Cotton | FedMA | [`fedma_cotton.ipynb`](notebooks/cotton/fedma_cotton.ipynb) | 10 | 0.9634 | 0.9647 | 0.9627 | 0.9628 |
 | Cotton | FedOpt | [`fedopt_cotton.ipynb`](notebooks/cotton/fedopt_cotton.ipynb) | 50 | 0.9079 | 0.5036 | 0.5074 | 0.5051 |
+| Wheat | FedAvg | [`fedavg_wheat.ipynb`](notebooks/wheat/fedavg_wheat.ipynb) | 10 | 0.8466 | 0.8356 | 0.8270 | 0.8293 |
 | Wheat | FedProx | [`fedprox_wheat.ipynb`](notebooks/wheat/fedprox_wheat.ipynb) | 10 | 0.8437 | 0.8390 | 0.8437 | 0.8387 |
+| Wheat | FedMA | [`fedma_wheat.ipynb`](notebooks/wheat/fedma_wheat.ipynb) | 10 | 0.8473 | 0.8375 | 0.8261 | 0.8288 |
 | Wheat | FedOpt | [`fedopt_wheat.ipynb`](notebooks/wheat/fedopt_wheat.ipynb) | 10 | 0.0576 | 0.0033 | 0.0576 | 0.0063 |
 | Potato | FedAvg | [`fedavg_fedprox_fedma_potato.ipynb`](notebooks/potato/fedavg_fedprox_fedma_potato.ipynb) | 10 | 0.9861 | 0.9865 | 0.9861 | 0.9857 |
 | Potato | FedProx | [`fedavg_fedprox_fedma_potato.ipynb`](notebooks/potato/fedavg_fedprox_fedma_potato.ipynb) | 10 | 0.9861 | 0.9859 | 0.9861 | 0.9858 |
@@ -56,6 +58,7 @@ FedAvg, FedProx and FedMA are reported at **communication round 10**; they conve
 | Tomato | FedOpt | [`fedopt_tomato.ipynb`](notebooks/tomato/fedopt_tomato.ipynb) | 50 | 0.8425 | 0.8673 | 0.8425 | 0.8142 |
 | PlantVillage | FedAvg | [`fedavg_plantvillage.ipynb`](notebooks/plantvillage/fedavg_plantvillage.ipynb) | 10 | 0.9913 | 0.9891 | 0.9863 | 0.9876 |
 | PlantVillage | FedProx | [`fedprox_plantvillage.ipynb`](notebooks/plantvillage/fedprox_plantvillage.ipynb) | 10 | 0.9623 | 0.9578 | 0.9516 | 0.9538 |
+| PlantVillage | FedMA | [`fedma_plantvillage.ipynb`](notebooks/plantvillage/fedma_plantvillage.ipynb) | 10 | 0.9960 | 0.9950 | 0.9924 | 0.9936 |
 | PlantVillage | FedOpt | [`fedopt_plantvillage.ipynb`](notebooks/plantvillage/fedopt_plantvillage.ipynb) | 50 | 0.9506 | 0.9563 | 0.9506 | 0.9503 |
 
 Precision, recall and F1 are macro-averaged. Every value can be checked against the corresponding file in `logs/` (and `results/` for per-round CSVs).

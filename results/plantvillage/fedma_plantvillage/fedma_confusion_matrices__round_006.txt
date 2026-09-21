@@ -1,0 +1,40 @@
+Confusion matrix too large to print in full (38 classes).
+Per-class diagonal (true positives) and row totals:
+  Apple___Apple_scab: 139/143 correct
+  Apple___Black_rot: 122/123 correct
+  Apple___Cedar_apple_rust: 62/62 correct
+  Apple___healthy: 332/333 correct
+  Blueberry___healthy: 300/300 correct
+  Cherry_(including_sour)___Powdery_mildew: 208/208 correct
+  Cherry_(including_sour)___healthy: 188/188 correct
+  Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot: 106/112 correct
+  Corn_(maize)___Common_rust_: 260/260 correct
+  Corn_(maize)___Northern_Leaf_Blight: 177/182 correct
+  Corn_(maize)___healthy: 212/212 correct
+  Grape___Black_rot: 236/236 correct
+  Grape___Esca_(Black_Measles): 274/275 correct
+  Grape___Leaf_blight_(Isariopsis_Leaf_Spot): 239/240 correct
+  Grape___healthy: 77/77 correct
+  Orange___Haunglongbing_(Citrus_greening): 1104/1104 correct
+  Peach___Bacterial_spot: 427/427 correct
+  Peach___healthy: 71/71 correct
+  Pepper,_bell___Bacterial_spot: 208/209 correct
+  Pepper,_bell___healthy: 285/287 correct
+  Potato___Early_blight: 209/210 correct
+  Potato___Late_blight: 189/192 correct
+  Potato___healthy: 27/32 correct
+  Raspberry___healthy: 70/70 correct
+  Soybean___healthy: 1024/1025 correct
+  Squash___Powdery_mildew: 353/353 correct
+  Strawberry___Leaf_scorch: 245/245 correct
+  Strawberry___healthy: 81/81 correct
+  Tomato___Bacterial_spot: 420/424 correct
+  Tomato___Early_blight: 202/212 correct
+  Tomato___Late_blight: 384/392 correct
+  Tomato___Leaf_Mold: 194/195 correct
+  Tomato___Septoria_leaf_spot: 355/357 correct
+  Tomato___Spider_mites Two-spotted_spider_mite: 327/327 correct
+  Tomato___Target_Spot: 285/292 correct
+  Tomato___Tomato_Yellow_Leaf_Curl_Virus: 1046/1047 correct
+  Tomato___Tomato_mosaic_virus: 67/67 correct
+  Tomato___healthy: 291/291 correct

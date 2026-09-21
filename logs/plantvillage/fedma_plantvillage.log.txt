@@ -1,0 +1,118 @@
+Device    : cuda
+PyTorch   : 2.10.0+cu128
+Data root : /kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color
+Classes : 38  |  Total samples: 54305
+  Client 0:  9111 samples
+  Client 1:  7461 samples
+  Client 2:  6409 samples
+  Client 3:  7488 samples
+  Client 4: 12975 samples
+Downloading: "https://download.pytorch.org/models/resnet18-f37072fd.pth" to /root/.cache/torch/hub/checkpoints/resnet18-f37072fd.pth
+
+
+
+============================================================
+  FedMA Federated Learning – PlantVillage (ResNet18)
+  Clients: 5  |  Rounds: 10  |  Local Epochs: 5
+  Dirichlet alpha=0.5  |  SGD lr=0.001  momentum=0.9
+============================================================
+  [Round 1] Client 0 done
+  [Round 1] Client 1 done
+  [Round 1] Client 2 done
+  [Round 1] Client 3 done
+  [Round 1] Client 4 done
+>>> Round  1 | Acc=0.9135  Prec=0.8982  Rec=0.8276  F1=0.8293
+
+  [Round 2] Client 0 done
+  [Round 2] Client 1 done
+  [Round 2] Client 2 done
+  [Round 2] Client 3 done
+  [Round 2] Client 4 done
+>>> Round  2 | Acc=0.9741  Prec=0.9722  Rec=0.9432  F1=0.9505
+
+  [Round 3] Client 0 done
+  [Round 3] Client 1 done
+  [Round 3] Client 2 done
+  [Round 3] Client 3 done
+  [Round 3] Client 4 done
+>>> Round  3 | Acc=0.9870  Prec=0.9851  Rec=0.9739  F1=0.9785
+
+  [Round 4] Client 0 done
+  [Round 4] Client 1 done
+  [Round 4] Client 2 done
+  [Round 4] Client 3 done
+  [Round 4] Client 4 done
+>>> Round  4 | Acc=0.9909  Prec=0.9892  Rec=0.9820  F1=0.9850
+
+  [Round 5] Client 0 done
+  [Round 5] Client 1 done
+  [Round 5] Client 2 done
+  [Round 5] Client 3 done
+  [Round 5] Client 4 done
+>>> Round  5 | Acc=0.9925  Prec=0.9902  Rec=0.9845  F1=0.9869
+
+  [Round 6] Client 0 done
+  [Round 6] Client 1 done
+  [Round 6] Client 2 done
+  [Round 6] Client 3 done
+  [Round 6] Client 4 done
+>>> Round  6 | Acc=0.9940  Prec=0.9925  Rec=0.9887  F1=0.9904
+
+  [Round 7] Client 0 done
+  [Round 7] Client 1 done
+  [Round 7] Client 2 done
+  [Round 7] Client 3 done
+  [Round 7] Client 4 done
+>>> Round  7 | Acc=0.9944  Prec=0.9927  Rec=0.9890  F1=0.9907
+
+  [Round 8] Client 0 done
+  [Round 8] Client 1 done
+  [Round 8] Client 2 done
+  [Round 8] Client 3 done
+  [Round 8] Client 4 done
+>>> Round  8 | Acc=0.9953  Prec=0.9946  Rec=0.9902  F1=0.9922
+
+  [Round 9] Client 0 done
+  [Round 9] Client 1 done
+  [Round 9] Client 2 done
+  [Round 9] Client 3 done
+  [Round 9] Client 4 done
+>>> Round  9 | Acc=0.9956  Prec=0.9944  Rec=0.9913  F1=0.9927
+
+  [Round 10] Client 0 done
+  [Round 10] Client 1 done
+  [Round 10] Client 2 done
+  [Round 10] Client 3 done
+  [Round 10] Client 4 done
+>>> Round 10 | Acc=0.9960  Prec=0.9950  Rec=0.9924  F1=0.9936
+
+
+--- FedMA Final Metrics Across Rounds ---
+ Round  Accuracy  Precision   Recall  F1-Score
+     1  0.913452   0.898151 0.827606  0.829341
+     2  0.974128   0.972160 0.943198  0.950534
+     3  0.987018   0.985082 0.973867  0.978482
+     4  0.990885   0.989157 0.981980  0.985032
+     5  0.992450   0.990219 0.984472  0.986859
+     6  0.994015   0.992541 0.988685  0.990422
+     7  0.994384   0.992730 0.989041  0.990695
+     8  0.995304   0.994621 0.990187  0.992218
+     9  0.995581   0.994427 0.991307  0.992745
+    10  0.996041   0.995045 0.992364  0.993631
+
+All outputs saved under /kaggle/working:
+  - /kaggle/working/fedma_metrics.csv
+  - /kaggle/working/fedma_checkpoint.json
+  - /kaggle/working/fedma_confusion_matrices/round_XXX.txt
+  - /kaggle/working/fedma_global_model.pth
+  - fedma_results.png
+/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+  cells[i][c] = re.sub('\\\\\|', '|', cell)
+/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+[NbConvertApp] Writing 126652 bytes to __notebook__.ipynb
+[NbConvertApp] Converting notebook __notebook__.ipynb to html
+[NbConvertApp] Support files will be in __results___files/
+[NbConvertApp] Making directory __results___files
+[NbConvertApp] Writing 362601 bytes to __results__.html

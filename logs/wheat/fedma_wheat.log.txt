@@ -1,0 +1,115 @@
+Classes : 15  |  Total samples: 13104
+  Client 0:  2253 samples
+  Client 1:  2174 samples
+  Client 2:  1740 samples
+  Client 3:  2348 samples
+  Client 4:  1969 samples
+Downloading: "https://download.pytorch.org/models/resnet18-f37072fd.pth" to /root/.cache/torch/hub/checkpoints/resnet18-f37072fd.pth
+
+
+
+============================================================
+  FedMA Federated Learning –Wheat
+  Clients: 5  |  Rounds: 10  |  Local Epochs: 5
+  Dirichlet alpha=0.5  |  SGD lr=0.001  momentum=0.9
+============================================================
+  [Round 1] Client 0 done
+  [Round 1] Client 1 done
+  [Round 1] Client 2 done
+  [Round 1] Client 3 done
+  [Round 1] Client 4 done
+>>> Round  1 | Acc=0.6508  Prec=0.6571  Rec=0.5886  F1=0.5801
+
+  [Round 2] Client 0 done
+  [Round 2] Client 1 done
+  [Round 2] Client 2 done
+  [Round 2] Client 3 done
+  [Round 2] Client 4 done
+>>> Round  2 | Acc=0.7492  Prec=0.7686  Rec=0.6953  F1=0.6985
+
+  [Round 3] Client 0 done
+  [Round 3] Client 1 done
+  [Round 3] Client 2 done
+  [Round 3] Client 3 done
+  [Round 3] Client 4 done
+>>> Round  3 | Acc=0.7870  Prec=0.7915  Rec=0.7474  F1=0.7545
+
+  [Round 4] Client 0 done
+  [Round 4] Client 1 done
+  [Round 4] Client 2 done
+  [Round 4] Client 3 done
+  [Round 4] Client 4 done
+>>> Round  4 | Acc=0.8023  Prec=0.7972  Rec=0.7688  F1=0.7740
+
+  [Round 5] Client 0 done
+  [Round 5] Client 1 done
+  [Round 5] Client 2 done
+  [Round 5] Client 3 done
+  [Round 5] Client 4 done
+>>> Round  5 | Acc=0.8122  Prec=0.8086  Rec=0.7811  F1=0.7874
+
+  [Round 6] Client 0 done
+  [Round 6] Client 1 done
+  [Round 6] Client 2 done
+  [Round 6] Client 3 done
+  [Round 6] Client 4 done
+>>> Round  6 | Acc=0.8324  Prec=0.8245  Rec=0.8073  F1=0.8131
+
+  [Round 7] Client 0 done
+  [Round 7] Client 1 done
+  [Round 7] Client 2 done
+  [Round 7] Client 3 done
+  [Round 7] Client 4 done
+>>> Round  7 | Acc=0.8294  Prec=0.8212  Rec=0.8061  F1=0.8089
+
+  [Round 8] Client 0 done
+  [Round 8] Client 1 done
+  [Round 8] Client 2 done
+  [Round 8] Client 3 done
+  [Round 8] Client 4 done
+>>> Round  8 | Acc=0.8401  Prec=0.8303  Rec=0.8186  F1=0.8215
+
+  [Round 9] Client 0 done
+  [Round 9] Client 1 done
+  [Round 9] Client 2 done
+  [Round 9] Client 3 done
+  [Round 9] Client 4 done
+>>> Round  9 | Acc=0.8385  Prec=0.8279  Rec=0.8169  F1=0.8198
+
+  [Round 10] Client 0 done
+  [Round 10] Client 1 done
+  [Round 10] Client 2 done
+  [Round 10] Client 3 done
+  [Round 10] Client 4 done
+>>> Round 10 | Acc=0.8473  Prec=0.8375  Rec=0.8261  F1=0.8288
+
+
+--- FedMA Final Metrics Across Rounds ---
+ Round  Accuracy  Precision   Recall  F1-Score
+     1  0.650763   0.657054 0.588607  0.580149
+     2  0.749237   0.768571 0.695262  0.698460
+     3  0.787023   0.791485 0.747363  0.754472
+     4  0.802290   0.797239 0.768750  0.774008
+     5  0.812214   0.808619 0.781052  0.787394
+     6  0.832443   0.824472 0.807291  0.813103
+     7  0.829389   0.821187 0.806053  0.808872
+     8  0.840076   0.830288 0.818618  0.821544
+     9  0.838550   0.827865 0.816911  0.819770
+    10  0.847328   0.837494 0.826099  0.828824
+
+All outputs saved under /kaggle/working:
+  - /kaggle/working/fedma_metrics.csv
+  - /kaggle/working/fedma_checkpoint.json
+  - /kaggle/working/fedma_confusion_matrices/round_XXX.txt
+  - /kaggle/working/fedma_global_model.pth
+  - fedma_results.png
+/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+  cells[i][c] = re.sub('\\\\\|', '|', cell)
+/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+[NbConvertApp] Writing 129996 bytes to __notebook__.ipynb
+[NbConvertApp] Converting notebook __notebook__.ipynb to html
+[NbConvertApp] Support files will be in __results___files/
+[NbConvertApp] Making directory __results___files
+[NbConvertApp] Writing 358500 bytes to __results__.html
