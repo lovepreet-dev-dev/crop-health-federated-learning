@@ -1,0 +1,10 @@
+# model weights (not tracked; tens of MB each)
+*.pth
+*.pt
+# datasets
+data/
+input/
+# notebook / python artefacts
+.ipynb_checkpoints/
+__pycache__/
+.DS_Store

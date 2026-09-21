@@ -1,0 +1,119 @@
+Device: cuda
+GPU: Tesla T4
+Train dir: /kaggle/input/datasets/kaustubhb999/tomatoleaf/tomato/train
+Val dir:   /kaggle/input/datasets/kaustubhb999/tomatoleaf/tomato/val
+Found 10 classes: ['Tomato___Bacterial_spot', 'Tomato___Early_blight', 'Tomato___Late_blight', 'Tomato___Leaf_Mold', 'Tomato___Septoria_leaf_spot', 'Tomato___Spider_mites Two-spotted_spider_mite', 'Tomato___Target_Spot', 'Tomato___Tomato_Yellow_Leaf_Curl_Virus', 'Tomato___Tomato_mosaic_virus', 'Tomato___healthy']
+Total images found: 11000
+Held-out test set: 1650 images | Client pool: 9350 images
+Client 0: 2247 images | class distribution: [42, 148, 455, 180, 133, 92, 2, 600, 589, 6]
+Client 1: 1268 images | class distribution: [0, 1, 6, 46, 452, 411, 256, 8, 81, 7]
+Client 2: 2361 images | class distribution: [52, 215, 219, 11, 29, 407, 375, 151, 119, 783]
+Client 3: 1818 images | class distribution: [473, 498, 38, 50, 318, 13, 301, 58, 28, 41]
+Client 4: 1656 images | class distribution: [368, 73, 217, 648, 3, 12, 1, 118, 118, 98]
+Client loaders ready: [2247, 1268, 2361, 1818, 1656]
+Test loader ready: 1650
+Downloading: "https://download.pytorch.org/models/resnet18-f37072fd.pth" to /root/.cache/torch/hub/checkpoints/resnet18-f37072fd.pth
+
+
+No checkpoint found -> starting fresh from round 1/10
+  Round 1 | Client 0 | n=2247 | local_loss=0.3648
+  Round 1 | Client 1 | n=1268 | local_loss=0.4583
+  Round 1 | Client 2 | n=2361 | local_loss=0.4059
+  Round 1 | Client 3 | n=1818 | local_loss=0.5506
+  Round 1 | Client 4 | n=1656 | local_loss=0.4024
+  -> New best model saved (F1=0.8934)
+Round 1/10 done in 185.5s | Acc=0.8970 Prec=0.9034 Rec=0.8970 F1=0.8934
+----------------------------------------------------------------------
+  Round 2 | Client 0 | n=2247 | local_loss=0.1067
+  Round 2 | Client 1 | n=1268 | local_loss=0.1476
+  Round 2 | Client 2 | n=2361 | local_loss=0.1315
+  Round 2 | Client 3 | n=1818 | local_loss=0.1890
+  Round 2 | Client 4 | n=1656 | local_loss=0.1171
+  -> New best model saved (F1=0.9535)
+Round 2/10 done in 161.2s | Acc=0.9539 Prec=0.9548 Rec=0.9539 F1=0.9535
+----------------------------------------------------------------------
+  Round 3 | Client 0 | n=2247 | local_loss=0.0659
+  Round 3 | Client 1 | n=1268 | local_loss=0.0949
+  Round 3 | Client 2 | n=2361 | local_loss=0.0784
+  Round 3 | Client 3 | n=1818 | local_loss=0.1150
+  Round 3 | Client 4 | n=1656 | local_loss=0.0648
+  -> New best model saved (F1=0.9725)
+Round 3/10 done in 161.6s | Acc=0.9727 Prec=0.9728 Rec=0.9727 F1=0.9725
+----------------------------------------------------------------------
+  Round 4 | Client 0 | n=2247 | local_loss=0.0448
+  Round 4 | Client 1 | n=1268 | local_loss=0.0681
+  Round 4 | Client 2 | n=2361 | local_loss=0.0515
+  Round 4 | Client 3 | n=1818 | local_loss=0.0840
+  Round 4 | Client 4 | n=1656 | local_loss=0.0487
+  -> New best model saved (F1=0.9793)
+Round 4/10 done in 161.6s | Acc=0.9794 Prec=0.9795 Rec=0.9794 F1=0.9793
+----------------------------------------------------------------------
+  Round 5 | Client 0 | n=2247 | local_loss=0.0381
+  Round 5 | Client 1 | n=1268 | local_loss=0.0577
+  Round 5 | Client 2 | n=2361 | local_loss=0.0401
+  Round 5 | Client 3 | n=1818 | local_loss=0.0666
+  Round 5 | Client 4 | n=1656 | local_loss=0.0360
+  -> New best model saved (F1=0.9842)
+Round 5/10 done in 161.8s | Acc=0.9842 Prec=0.9843 Rec=0.9842 F1=0.9842
+----------------------------------------------------------------------
+  Round 6 | Client 0 | n=2247 | local_loss=0.0293
+  Round 6 | Client 1 | n=1268 | local_loss=0.0494
+  Round 6 | Client 2 | n=2361 | local_loss=0.0340
+  Round 6 | Client 3 | n=1818 | local_loss=0.0565
+  Round 6 | Client 4 | n=1656 | local_loss=0.0355
+  -> New best model saved (F1=0.9872)
+Round 6/10 done in 161.7s | Acc=0.9873 Prec=0.9873 Rec=0.9873 F1=0.9872
+----------------------------------------------------------------------
+  Round 7 | Client 0 | n=2247 | local_loss=0.0239
+  Round 7 | Client 1 | n=1268 | local_loss=0.0488
+  Round 7 | Client 2 | n=2361 | local_loss=0.0281
+  Round 7 | Client 3 | n=1818 | local_loss=0.0457
+  Round 7 | Client 4 | n=1656 | local_loss=0.0273
+  -> New best model saved (F1=0.9884)
+Round 7/10 done in 161.2s | Acc=0.9885 Prec=0.9885 Rec=0.9885 F1=0.9884
+----------------------------------------------------------------------
+  Round 8 | Client 0 | n=2247 | local_loss=0.0238
+  Round 8 | Client 1 | n=1268 | local_loss=0.0421
+  Round 8 | Client 2 | n=2361 | local_loss=0.0276
+  Round 8 | Client 3 | n=1818 | local_loss=0.0387
+  Round 8 | Client 4 | n=1656 | local_loss=0.0244
+  -> New best model saved (F1=0.9909)
+Round 8/10 done in 160.7s | Acc=0.9909 Prec=0.9909 Rec=0.9909 F1=0.9909
+----------------------------------------------------------------------
+  Round 9 | Client 0 | n=2247 | local_loss=0.0181
+  Round 9 | Client 1 | n=1268 | local_loss=0.0459
+  Round 9 | Client 2 | n=2361 | local_loss=0.0201
+  Round 9 | Client 3 | n=1818 | local_loss=0.0336
+  Round 9 | Client 4 | n=1656 | local_loss=0.0244
+  -> New best model saved (F1=0.9927)
+Round 9/10 done in 161.1s | Acc=0.9927 Prec=0.9928 Rec=0.9927 F1=0.9927
+----------------------------------------------------------------------
+  Round 10 | Client 0 | n=2247 | local_loss=0.0170
+  Round 10 | Client 1 | n=1268 | local_loss=0.0358
+  Round 10 | Client 2 | n=2361 | local_loss=0.0197
+  Round 10 | Client 3 | n=1818 | local_loss=0.0311
+  Round 10 | Client 4 | n=1656 | local_loss=0.0225
+Round 10/10 done in 161.7s | Acc=0.9927 Prec=0.9928 Rec=0.9927 F1=0.9927
+----------------------------------------------------------------------
+FedAvg training complete.
+Metrics file: /kaggle/working/fedavg_tomatoleaf/metrics.json
+Best model:  /kaggle/working/fedavg_tomatoleaf/best_model.pth (F1=0.9927)
+ round  avg_client_loss  accuracy  precision   recall       f1  elapsed_sec
+     1         0.436428  0.896970   0.903411 0.896970 0.893397        185.5
+     2         0.138378  0.953939   0.954797 0.953939 0.953493        161.2
+     3         0.083811  0.972727   0.972802 0.972727 0.972524        161.6
+     4         0.059425  0.979394   0.979526 0.979394 0.979300        161.6
+     5         0.047701  0.984242   0.984308 0.984242 0.984193        161.8
+     6         0.040931  0.987273   0.987281 0.987273 0.987235        161.7
+     7         0.034730  0.988485   0.988525 0.988485 0.988432        161.2
+     8         0.031324  0.990909   0.990948 0.990909 0.990869        160.7
+     9         0.028418  0.992727   0.992766 0.992727 0.992699        161.1
+    10         0.025217  0.992727   0.992766 0.992727 0.992699        161.7
+/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+  cells[i][c] = re.sub('\\\\\|', '|', cell)
+/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+[NbConvertApp] Writing 30425 bytes to __notebook__.ipynb
+[NbConvertApp] Converting notebook __notebook__.ipynb to html
+[NbConvertApp] Writing 347787 bytes to __results__.html

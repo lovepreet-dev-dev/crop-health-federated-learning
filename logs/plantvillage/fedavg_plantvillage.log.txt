@@ -1,0 +1,35 @@
+[INFO] Using device: cuda
+[INFO] Dataset root: /kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color
+[INFO] Classes: 38  |  Total images: 54305
+  Client 0: train=8144  test=2037
+  Client 1: train=7738  test=1935
+  Client 2: train=10738  test=2685
+  Client 3: train=8063  test=2016
+  Client 4: train=8759  test=2190
+Downloading: "https://download.pytorch.org/models/resnet18-f37072fd.pth" to /root/.cache/torch/hub/checkpoints/resnet18-f37072fd.pth
+
+
+
+============================================================
+FEDAVG
+============================================================
+  Round  1 | Acc=0.9152 | P=0.9078 | R=0.8900 | F1=0.8834
+  Round  2 | Acc=0.9748 | P=0.9706 | R=0.9656 | F1=0.9668
+  Round  3 | Acc=0.9841 | P=0.9824 | R=0.9773 | F1=0.9794
+  Round  4 | Acc=0.9869 | P=0.9845 | R=0.9809 | F1=0.9825
+  Round  5 | Acc=0.9887 | P=0.9864 | R=0.9830 | F1=0.9845
+  Round  6 | Acc=0.9899 | P=0.9876 | R=0.9845 | F1=0.9860
+  Round  7 | Acc=0.9903 | P=0.9885 | R=0.9851 | F1=0.9867
+  Round  8 | Acc=0.9903 | P=0.9878 | R=0.9859 | F1=0.9868
+  Round  9 | Acc=0.9914 | P=0.9892 | R=0.9862 | F1=0.9876
+  Round 10 | Acc=0.9913 | P=0.9891 | R=0.9863 | F1=0.9876
+
+[Done] All outputs saved to /kaggle/working
+/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+  cells[i][c] = re.sub('\\\\\|', '|', cell)
+/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+[NbConvertApp] Writing 14811 bytes to __notebook__.ipynb
+[NbConvertApp] Converting notebook __notebook__.ipynb to html
+[NbConvertApp] Writing 316353 bytes to __results__.html

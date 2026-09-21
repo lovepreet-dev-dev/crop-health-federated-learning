@@ -1,0 +1,158 @@
+Device  : cuda
+Classes : ['Apple___Apple_scab', 'Apple___Black_rot', 'Apple___Cedar_apple_rust', 'Apple___healthy', 'Blueberry___healthy', 'Cherry_(including_sour)___Powdery_mildew', 'Cherry_(including_sour)___healthy', 'Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot', 'Corn_(maize)___Common_rust_', 'Corn_(maize)___Northern_Leaf_Blight', 'Corn_(maize)___healthy', 'Grape___Black_rot', 'Grape___Esca_(Black_Measles)', 'Grape___Leaf_blight_(Isariopsis_Leaf_Spot)', 'Grape___healthy', 'Orange___Haunglongbing_(Citrus_greening)', 'Peach___Bacterial_spot', 'Peach___healthy', 'Pepper,_bell___Bacterial_spot', 'Pepper,_bell___healthy', 'Potato___Early_blight', 'Potato___Late_blight', 'Potato___healthy', 'Raspberry___healthy', 'Soybean___healthy', 'Squash___Powdery_mildew', 'Strawberry___Leaf_scorch', 'Strawberry___healthy', 'Tomato___Bacterial_spot', 'Tomato___Early_blight', 'Tomato___Late_blight', 'Tomato___Leaf_Mold', 'Tomato___Septoria_leaf_spot', 'Tomato___Spider_mites Two-spotted_spider_mite', 'Tomato___Target_Spot', 'Tomato___Tomato_Yellow_Leaf_Curl_Virus', 'Tomato___Tomato_mosaic_virus', 'Tomato___healthy']
+Classes (38): ['Apple___Apple_scab', 'Apple___Black_rot', 'Apple___Cedar_apple_rust', 'Apple___healthy', 'Blueberry___healthy', 'Cherry_(including_sour)___Powdery_mildew', 'Cherry_(including_sour)___healthy', 'Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot', 'Corn_(maize)___Common_rust_', 'Corn_(maize)___Northern_Leaf_Blight', 'Corn_(maize)___healthy', 'Grape___Black_rot', 'Grape___Esca_(Black_Measles)', 'Grape___Leaf_blight_(Isariopsis_Leaf_Spot)', 'Grape___healthy', 'Orange___Haunglongbing_(Citrus_greening)', 'Peach___Bacterial_spot', 'Peach___healthy', 'Pepper,_bell___Bacterial_spot', 'Pepper,_bell___healthy', 'Potato___Early_blight', 'Potato___Late_blight', 'Potato___healthy', 'Raspberry___healthy', 'Soybean___healthy', 'Squash___Powdery_mildew', 'Strawberry___Leaf_scorch', 'Strawberry___healthy', 'Tomato___Bacterial_spot', 'Tomato___Early_blight', 'Tomato___Late_blight', 'Tomato___Leaf_Mold', 'Tomato___Septoria_leaf_spot', 'Tomato___Spider_mites Two-spotted_spider_mite', 'Tomato___Target_Spot', 'Tomato___Tomato_Yellow_Leaf_Curl_Virus', 'Tomato___Tomato_mosaic_virus', 'Tomato___healthy']
+Total   : 54305 images
+Train : 43444 | Test : 10861
+
+── Client distribution ──
+  Client 0: 12131 samples | {'Apple___Apple_scab': 22, 'Apple___Black_rot': 113, 'Apple___Cedar_apple_rust': 207, 'Apple___healthy': 763, 'Blueberry___healthy': 778, 'Cherry_(including_sour)___Powdery_mildew': 356, 'Cherry_(including_sour)___healthy': 210, 'Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot': 9, 'Corn_(maize)___Common_rust_': 337, 'Corn_(maize)___Northern_Leaf_Blight': 24, 'Corn_(maize)___healthy': 106, 'Grape___Black_rot': 142, 'Grape___Esca_(Black_Measles)': 282, 'Grape___Leaf_blight_(Isariopsis_Leaf_Spot)': 93, 'Grape___healthy': 77, 'Orange___Haunglongbing_(Citrus_greening)': 2208, 'Peach___Bacterial_spot': 75, 'Peach___healthy': 225, 'Pepper,_bell___Bacterial_spot': 7, 'Pepper,_bell___healthy': 451, 'Potato___Early_blight': 17, 'Potato___Late_blight': 428, 'Potato___healthy': 24, 'Raspberry___healthy': 57, 'Soybean___healthy': 2751, 'Squash___Powdery_mildew': 0, 'Strawberry___Leaf_scorch': 62, 'Strawberry___healthy': 27, 'Tomato___Bacterial_spot': 1000, 'Tomato___Early_blight': 72, 'Tomato___Late_blight': 235, 'Tomato___Leaf_Mold': 229, 'Tomato___Septoria_leaf_spot': 215, 'Tomato___Spider_mites Two-spotted_spider_mite': 6, 'Tomato___Target_Spot': 319, 'Tomato___Tomato_Yellow_Leaf_Curl_Virus': 10, 'Tomato___Tomato_mosaic_virus': 0, 'Tomato___healthy': 194}
+  Client 1: 8694 samples | {'Apple___Apple_scab': 47, 'Apple___Black_rot': 61, 'Apple___Cedar_apple_rust': 5, 'Apple___healthy': 409, 'Blueberry___healthy': 188, 'Cherry_(including_sour)___Powdery_mildew': 140, 'Cherry_(including_sour)___healthy': 267, 'Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot': 48, 'Corn_(maize)___Common_rust_': 51, 'Corn_(maize)___Northern_Leaf_Blight': 132, 'Corn_(maize)___healthy': 44, 'Grape___Black_rot': 270, 'Grape___Esca_(Black_Measles)': 247, 'Grape___Leaf_blight_(Isariopsis_Leaf_Spot)': 222, 'Grape___healthy': 32, 'Orange___Haunglongbing_(Citrus_greening)': 595, 'Peach___Bacterial_spot': 0, 'Peach___healthy': 54, 'Pepper,_bell___Bacterial_spot': 9, 'Pepper,_bell___healthy': 26, 'Potato___Early_blight': 43, 'Potato___Late_blight': 2, 'Potato___healthy': 0, 'Raspberry___healthy': 24, 'Soybean___healthy': 759, 'Squash___Powdery_mildew': 238, 'Strawberry___Leaf_scorch': 90, 'Strawberry___healthy': 3, 'Tomato___Bacterial_spot': 57, 'Tomato___Early_blight': 175, 'Tomato___Late_blight': 1076, 'Tomato___Leaf_Mold': 210, 'Tomato___Septoria_leaf_spot': 853, 'Tomato___Spider_mites Two-spotted_spider_mite': 5, 'Tomato___Target_Spot': 157, 'Tomato___Tomato_Yellow_Leaf_Curl_Virus': 2144, 'Tomato___Tomato_mosaic_virus': 7, 'Tomato___healthy': 4}
+  Client 2: 7105 samples | {'Apple___Apple_scab': 228, 'Apple___Black_rot': 43, 'Apple___Cedar_apple_rust': 1, 'Apple___healthy': 32, 'Blueberry___healthy': 1, 'Cherry_(including_sour)___Powdery_mildew': 107, 'Cherry_(including_sour)___healthy': 8, 'Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot': 15, 'Corn_(maize)___Common_rust_': 344, 'Corn_(maize)___Northern_Leaf_Blight': 353, 'Corn_(maize)___healthy': 561, 'Grape___Black_rot': 173, 'Grape___Esca_(Black_Measles)': 20, 'Grape___Leaf_blight_(Isariopsis_Leaf_Spot)': 90, 'Grape___healthy': 39, 'Orange___Haunglongbing_(Citrus_greening)': 1146, 'Peach___Bacterial_spot': 66, 'Peach___healthy': 0, 'Pepper,_bell___Bacterial_spot': 366, 'Pepper,_bell___healthy': 29, 'Potato___Early_blight': 567, 'Potato___Late_blight': 113, 'Potato___healthy': 0, 'Raspberry___healthy': 23, 'Soybean___healthy': 141, 'Squash___Powdery_mildew': 207, 'Strawberry___Leaf_scorch': 196, 'Strawberry___healthy': 113, 'Tomato___Bacterial_spot': 109, 'Tomato___Early_blight': 220, 'Tomato___Late_blight': 101, 'Tomato___Leaf_Mold': 182, 'Tomato___Septoria_leaf_spot': 2, 'Tomato___Spider_mites Two-spotted_spider_mite': 37, 'Tomato___Target_Spot': 22, 'Tomato___Tomato_Yellow_Leaf_Curl_Virus': 634, 'Tomato___Tomato_mosaic_virus': 138, 'Tomato___healthy': 678}
+  Client 3: 7743 samples | {'Apple___Apple_scab': 121, 'Apple___Black_rot': 19, 'Apple___Cedar_apple_rust': 3, 'Apple___healthy': 87, 'Blueberry___healthy': 161, 'Cherry_(including_sour)___Powdery_mildew': 235, 'Cherry_(including_sour)___healthy': 119, 'Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot': 141, 'Corn_(maize)___Common_rust_': 170, 'Corn_(maize)___Northern_Leaf_Blight': 247, 'Corn_(maize)___healthy': 131, 'Grape___Black_rot': 286, 'Grape___Esca_(Black_Measles)': 163, 'Grape___Leaf_blight_(Isariopsis_Leaf_Spot)': 0, 'Grape___healthy': 6, 'Orange___Haunglongbing_(Citrus_greening)': 302, 'Peach___Bacterial_spot': 263, 'Peach___healthy': 5, 'Pepper,_bell___Bacterial_spot': 225, 'Pepper,_bell___healthy': 501, 'Potato___Early_blight': 89, 'Potato___Late_blight': 107, 'Potato___healthy': 11, 'Raspberry___healthy': 191, 'Soybean___healthy': 7, 'Squash___Powdery_mildew': 835, 'Strawberry___Leaf_scorch': 7, 'Strawberry___healthy': 195, 'Tomato___Bacterial_spot': 331, 'Tomato___Early_blight': 127, 'Tomato___Late_blight': 110, 'Tomato___Leaf_Mold': 69, 'Tomato___Septoria_leaf_spot': 293, 'Tomato___Spider_mites Two-spotted_spider_mite': 1147, 'Tomato___Target_Spot': 616, 'Tomato___Tomato_Yellow_Leaf_Curl_Virus': 29, 'Tomato___Tomato_mosaic_virus': 25, 'Tomato___healthy': 369}
+  Client 4: 7771 samples | {'Apple___Apple_scab': 86, 'Apple___Black_rot': 261, 'Apple___Cedar_apple_rust': 4, 'Apple___healthy': 25, 'Blueberry___healthy': 74, 'Cherry_(including_sour)___Powdery_mildew': 4, 'Cherry_(including_sour)___healthy': 79, 'Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot': 197, 'Corn_(maize)___Common_rust_': 51, 'Corn_(maize)___Northern_Leaf_Blight': 32, 'Corn_(maize)___healthy': 88, 'Grape___Black_rot': 73, 'Grape___Esca_(Black_Measles)': 394, 'Grape___Leaf_blight_(Isariopsis_Leaf_Spot)': 456, 'Grape___healthy': 184, 'Orange___Haunglongbing_(Citrus_greening)': 154, 'Peach___Bacterial_spot': 1433, 'Peach___healthy': 4, 'Pepper,_bell___Bacterial_spot': 191, 'Pepper,_bell___healthy': 175, 'Potato___Early_blight': 84, 'Potato___Late_blight': 150, 'Potato___healthy': 87, 'Raspberry___healthy': 2, 'Soybean___healthy': 414, 'Squash___Powdery_mildew': 188, 'Strawberry___Leaf_scorch': 532, 'Strawberry___healthy': 27, 'Tomato___Bacterial_spot': 205, 'Tomato___Early_blight': 206, 'Tomato___Late_blight': 5, 'Tomato___Leaf_Mold': 72, 'Tomato___Septoria_leaf_spot': 54, 'Tomato___Spider_mites Two-spotted_spider_mite': 146, 'Tomato___Target_Spot': 9, 'Tomato___Tomato_Yellow_Leaf_Curl_Virus': 1469, 'Tomato___Tomato_mosaic_virus': 128, 'Tomato___healthy': 28}
+
+============================================================
+  Running FedOpt (FedAdam)  —  50 rounds
+  Server Adam: lr=0.001  β1=0.9  β2=0.99  ε=0.001
+============================================================
+Downloading: "https://download.pytorch.org/models/resnet18-f37072fd.pth" to /root/.cache/torch/hub/checkpoints/resnet18-f37072fd.pth
+
+
+  Round   1 | Acc=0.1458  Prec=0.3064  Rec=0.1458  F1=0.1049  [best=0.1458]
+  Round   5 | Acc=0.4242  Prec=0.6657  Rec=0.4242  F1=0.4318  [best=0.4832]
+  Round  10 | Acc=0.4563  Prec=0.7173  Rec=0.4563  F1=0.4634  [best=0.4832]
+  Round  15 | Acc=0.6444  Prec=0.8218  Rec=0.6444  F1=0.6437  [best=0.6444]
+  Round  20 | Acc=0.7861  Prec=0.8769  Rec=0.7861  F1=0.7887  [best=0.7861]
+  Round  25 | Acc=0.8638  Prec=0.9043  Rec=0.8638  F1=0.8656  [best=0.8638]
+  Round  30 | Acc=0.9116  Prec=0.9286  Rec=0.9116  F1=0.9119  [best=0.9116]
+  Round  35 | Acc=0.9319  Prec=0.9442  Rec=0.9319  F1=0.9319  [best=0.9319]
+  Round  40 | Acc=0.9425  Prec=0.9507  Rec=0.9425  F1=0.9422  [best=0.9425]
+  Round  45 | Acc=0.9480  Prec=0.9540  Rec=0.9480  F1=0.9476  [best=0.9480]
+  Round  50 | Acc=0.9506  Prec=0.9563  Rec=0.9506  F1=0.9503  [best=0.9506]
+
+  Restoring best model (Acc=0.9506)
+
+============================================================
+  FEDOPT — FINAL TEST RESULTS
+============================================================
+  Accuracy : 0.9506
+  Precision: 0.9563
+  Recall   : 0.9506
+  F1-Score : 0.9503
+
+Classification Report:
+                                                    precision    recall  f1-score   support
+
+                                Apple___Apple_scab       0.90      0.98      0.94       126
+                                 Apple___Black_rot       0.91      1.00      0.95       124
+                          Apple___Cedar_apple_rust       1.00      0.67      0.80        55
+                                   Apple___healthy       0.99      0.91      0.95       329
+                               Blueberry___healthy       0.95      1.00      0.97       300
+          Cherry_(including_sour)___Powdery_mildew       0.99      0.91      0.95       210
+                 Cherry_(including_sour)___healthy       0.96      0.99      0.97       171
+Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot       0.92      0.80      0.85       103
+                       Corn_(maize)___Common_rust_       0.98      0.99      0.99       239
+               Corn_(maize)___Northern_Leaf_Blight       0.90      0.95      0.93       197
+                            Corn_(maize)___healthy       0.99      1.00      1.00       232
+                                 Grape___Black_rot       0.93      1.00      0.96       236
+                      Grape___Esca_(Black_Measles)       0.98      0.94      0.96       277
+        Grape___Leaf_blight_(Isariopsis_Leaf_Spot)       1.00      1.00      1.00       215
+                                   Grape___healthy       0.94      0.99      0.97        85
+          Orange___Haunglongbing_(Citrus_greening)       0.99      1.00      1.00      1102
+                            Peach___Bacterial_spot       0.96      0.98      0.97       460
+                                   Peach___healthy       0.76      1.00      0.86        72
+                     Pepper,_bell___Bacterial_spot       0.99      0.93      0.96       199
+                            Pepper,_bell___healthy       0.84      1.00      0.91       296
+                             Potato___Early_blight       0.95      1.00      0.98       200
+                              Potato___Late_blight       1.00      0.86      0.93       200
+                                  Potato___healthy       0.80      0.93      0.86        30
+                               Raspberry___healthy       1.00      0.97      0.99        74
+                                 Soybean___healthy       1.00      0.96      0.98      1018
+                           Squash___Powdery_mildew       1.00      0.98      0.99       367
+                          Strawberry___Leaf_scorch       1.00      0.96      0.98       222
+                              Strawberry___healthy       1.00      0.99      0.99        91
+                           Tomato___Bacterial_spot       0.99      0.71      0.83       425
+                             Tomato___Early_blight       0.92      0.79      0.85       200
+                              Tomato___Late_blight       0.90      0.95      0.92       382
+                                Tomato___Leaf_Mold       0.98      0.89      0.94       190
+                       Tomato___Septoria_leaf_spot       0.76      0.99      0.86       354
+     Tomato___Spider_mites Two-spotted_spider_mite       0.97      0.91      0.94       335
+                              Tomato___Target_Spot       0.96      0.77      0.85       281
+            Tomato___Tomato_Yellow_Leaf_Curl_Virus       0.99      0.99      0.99      1071
+                      Tomato___Tomato_mosaic_virus       0.68      1.00      0.81        75
+                                  Tomato___healthy       0.85      1.00      0.92       318
+
+                                          accuracy                           0.95     10861
+                                         macro avg       0.94      0.94      0.93     10861
+                                      weighted avg       0.96      0.95      0.95     10861
+
+Saved: fedopt_training_curves.png
+Saved: fedopt_confusion_matrix.png
+
+Per-round metrics:
+ round  accuracy  precision   recall       f1
+     1  0.145751   0.306376 0.145751 0.104887
+     2  0.390848   0.581649 0.390848 0.390274
+     3  0.483197   0.640772 0.483197 0.473522
+     4  0.458429   0.654790 0.458429 0.462333
+     5  0.424178   0.665731 0.424178 0.431820
+     6  0.411564   0.677651 0.411564 0.421352
+     7  0.407973   0.688848 0.407973 0.416214
+     8  0.416536   0.701165 0.416536 0.424098
+     9  0.431176   0.706248 0.431176 0.436733
+    10  0.456312   0.717280 0.456312 0.463447
+    11  0.486051   0.725914 0.486051 0.493937
+    12  0.525734   0.756768 0.525734 0.532631
+    13  0.563852   0.764649 0.563852 0.568276
+    14  0.602983   0.778780 0.602983 0.604588
+    15  0.644416   0.821778 0.644416 0.643708
+    16  0.678206   0.839039 0.678206 0.677838
+    17  0.711168   0.851887 0.711168 0.711060
+    18  0.740079   0.863094 0.740079 0.741525
+    19  0.764478   0.869772 0.764478 0.766158
+    20  0.786115   0.876902 0.786115 0.788695
+    21  0.807384   0.883568 0.807384 0.810384
+    22  0.823865   0.887903 0.823865 0.826386
+    23  0.840991   0.898383 0.840991 0.843785
+    24  0.852592   0.900854 0.852592 0.854938
+    25  0.863825   0.904252 0.863825 0.865605
+    26  0.877451   0.909331 0.877451 0.878846
+    27  0.886843   0.913424 0.886843 0.887746
+    28  0.895406   0.918000 0.895406 0.895992
+    29  0.904245   0.923380 0.904245 0.904543
+    30  0.911610   0.928574 0.911610 0.911874
+    31  0.917411   0.932755 0.917411 0.917646
+    32  0.922659   0.936613 0.922659 0.922693
+    33  0.926066   0.939570 0.926066 0.926062
+    34  0.928275   0.941307 0.928275 0.928195
+    35  0.931866   0.944229 0.931866 0.931887
+    36  0.935181   0.946795 0.935181 0.935181
+    37  0.937759   0.948540 0.937759 0.937701
+    38  0.939416   0.949483 0.939416 0.939367
+    39  0.941810   0.950796 0.941810 0.941577
+    40  0.942455   0.950721 0.942455 0.942158
+    41  0.943744   0.951542 0.943744 0.943429
+    42  0.945953   0.953028 0.945953 0.945549
+    43  0.946966   0.953576 0.946966 0.946680
+    44  0.947519   0.953626 0.947519 0.947113
+    45  0.947979   0.953962 0.947979 0.947581
+    46  0.948808   0.954526 0.948808 0.948405
+    47  0.949913   0.955393 0.949913 0.949510
+    48  0.950005   0.955501 0.950005 0.949643
+    49  0.950097   0.955680 0.950097 0.949785
+    50  0.950557   0.956307 0.950557 0.950279
+
+Model saved: fedopt_potato.pth
+
+FedOpt Done ✓
+/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+  cells[i][c] = re.sub('\\\\\|', '|', cell)
+/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+[NbConvertApp] Writing 425931 bytes to __notebook__.ipynb
+[NbConvertApp] Converting notebook __notebook__.ipynb to html
+[NbConvertApp] Support files will be in __results___files/
+[NbConvertApp] Making directory __results___files
+[NbConvertApp] Making directory __results___files
+[NbConvertApp] Writing 372247 bytes to __results__.html

@@ -1,0 +1,83 @@
+Scanning dataset structure...
+CUDA OK — Tesla T4
+Train dir : /kaggle/input/datasets/kaustubhb999/tomatoleaf/tomato/train  exists=True
+Test  dir : /kaggle/input/datasets/kaustubhb999/tomatoleaf/tomato/val   exists=True
+
+Classes (10): ['Tomato___Bacterial_spot', 'Tomato___Early_blight', 'Tomato___Late_blight', 'Tomato___Leaf_Mold', 'Tomato___Septoria_leaf_spot', 'Tomato___Spider_mites Two-spotted_spider_mite', 'Tomato___Target_Spot', 'Tomato___Tomato_Yellow_Leaf_Curl_Virus', 'Tomato___Tomato_mosaic_virus', 'Tomato___healthy']
+Train images: 10000
+Test  images: 1000
+Total pooled : 11000
+
+Client data distribution:
+  Client 1:  1849 samples | 10 classes
+  Client 2:  2412 samples | 10 classes
+  Client 3:  2167 samples | 10 classes
+  Client 4:  1706 samples | 9 classes
+  Client 5:  2866 samples | 10 classes
+Client 1: train=1479, val=370
+Client 2: train=1929, val=483
+Client 3: train=1733, val=434
+Client 4: train=1364, val=342
+Client 5: train=2292, val=574
+
+Global val set size: 2203
+Downloading: "https://download.pytorch.org/models/resnet18-f37072fd.pth" to /root/.cache/torch/hub/checkpoints/resnet18-f37072fd.pth
+
+
+ResNet18 → 10 output classes
+
+=================================================================
+             FedProx Training — Tomato Leaf Disease              
+  Clients=5 | α=0.5 | μ=0.01
+  Rounds=10 | LocalEpochs=5 | LR=0.001
+=================================================================
+Round   1/10 | Acc=0.8643 | Prec=0.8797 | Rec=0.8643 | F1=0.8524
+Round   5/10 | Acc=0.9778 | Prec=0.9780 | Rec=0.9778 | F1=0.9776
+Round  10/10 | Acc=0.9823 | Prec=0.9825 | Rec=0.9823 | F1=0.9822
+
+=================================================================
+Best Accuracy: 0.9837  (98.37%)
+=================================================================
+Best model saved → fedprox_tomatoleaf_best.pth
+
+── Final Results (Best Model) ──────────────────────────
+  Accuracy  : 0.9837  (98.37%)
+  Precision : 0.9838
+  Recall    : 0.9837
+  F1-Score  : 0.9836
+────────────────────────────────────────────────────────
+Plot saved → fedprox_tomatoleaf_metrics.png
+
+── Per-Client Validation Performance (Best Model) ──────
+  Client 1: Acc=0.9730 | Prec=0.9762 | Rec=0.9730 | F1=0.9736
+  Client 2: Acc=0.9855 | Prec=0.9870 | Rec=0.9855 | F1=0.9859
+  Client 3: Acc=0.9816 | Prec=0.9837 | Rec=0.9816 | F1=0.9820
+  Client 4: Acc=0.9912 | Prec=0.9956 | Rec=0.9912 | F1=0.9928
+  Client 5: Acc=0.9861 | Prec=0.9884 | Rec=0.9861 | F1=0.9869
+
+── Experiment Configuration ─────────────────────────────
+  Dataset               : Tomato Leaf Disease (kaustubhb999)
+  Model                 : ResNet18
+  FL Algorithm          : FedProx
+  Num Clients           : 5
+  Dirichlet Alpha       : 0.5
+  Proximal Coeff (μ)    : 0.01
+  Local Epochs          : 5
+  Global Rounds         : 10
+  Batch Size            : 32
+  Learning Rate         : 0.001
+  Momentum              : 0.9
+  Num Classes           : 10
+  Total Samples         : 11000
+  Best Accuracy         : 98.37%
+  Final F1-Score        : 0.9836
+/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+  cells[i][c] = re.sub('\\\\\|', '|', cell)
+/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+[NbConvertApp] Writing 211317 bytes to __notebook__.ipynb
+[NbConvertApp] Converting notebook __notebook__.ipynb to html
+[NbConvertApp] Support files will be in __results___files/
+[NbConvertApp] Making directory __results___files
+[NbConvertApp] Writing 355060 bytes to __results__.html

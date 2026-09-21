@@ -1,0 +1,188 @@
+Using device: cuda
+GPU: Tesla T4
+Total images found across all subfolders: 26108
+Classes found (14): [np.str_('Aphids'), np.str_('Aphids edited'), np.str_('Army worm'), np.str_('Army worm edited'), np.str_('Bacterial Blight'), np.str_('Bacterial Blight edited'), np.str_('Bacterial blight'), np.str_('Healthy'), np.str_('Healthy leaf edited'), np.str_('Powdery Mildew'), np.str_('Powdery Mildew Edited'), np.str_('Powdery mildew'), np.str_('Target spot'), np.str_('Target spot edited')]
+  Aphids                         4320
+  Aphids edited                  39
+  Army worm                      4320
+  Army worm edited               40
+  Bacterial Blight               1120
+  Bacterial Blight edited        40
+  Bacterial blight               3200
+  Healthy                        4320
+  Healthy leaf edited            39
+  Powdery Mildew                 1120
+  Powdery Mildew Edited          38
+  Powdery mildew                 3200
+  Target spot                    4271
+  Target spot edited             41
+Train pool: 20886 images | Held-out test: 5222 images
+Client 0: 4124 samples
+Client 1: 4748 samples
+Client 2: 3283 samples
+Client 3: 4530 samples
+Client 4: 4201 samples
+No existing metrics file — starting fresh.
+  -> new best model saved (F1=0.0569)
+Round 1/50 | Acc=0.1595 Prec=0.1294 Rec=0.1260 F1=0.0569 Time=699.99s
+Round 2/50 | Acc=0.0998 Prec=0.0989 Rec=0.1368 F1=0.0527 Time=576.28s
+  -> new best model saved (F1=0.0849)
+Round 3/50 | Acc=0.1990 Prec=0.1409 Rec=0.1208 F1=0.0849 Time=569.96s
+  -> new best model saved (F1=0.1501)
+Round 4/50 | Acc=0.3108 Prec=0.1825 Rec=0.1672 F1=0.1501 Time=576.04s
+Round 5/50 | Acc=0.2802 Prec=0.2320 Rec=0.1592 F1=0.1274 Time=582.64s
+  -> new best model saved (F1=0.1756)
+Round 6/50 | Acc=0.3786 Prec=0.2636 Rec=0.2026 F1=0.1756 Time=578.53s
+  -> new best model saved (F1=0.1815)
+Round 7/50 | Acc=0.3941 Prec=0.3139 Rec=0.1936 F1=0.1815 Time=573.83s
+  -> new best model saved (F1=0.2216)
+Round 8/50 | Acc=0.4037 Prec=0.2983 Rec=0.2121 F1=0.2216 Time=600.36s
+Round 9/50 | Acc=0.4150 Prec=0.3240 Rec=0.2210 F1=0.2192 Time=577.58s
+  -> new best model saved (F1=0.2476)
+Round 10/50 | Acc=0.4374 Prec=0.3086 Rec=0.2460 F1=0.2476 Time=571.59s
+  -> new best model saved (F1=0.2830)
+Round 11/50 | Acc=0.4916 Prec=0.3223 Rec=0.2795 F1=0.2830 Time=576.33s
+  -> new best model saved (F1=0.2914)
+Round 12/50 | Acc=0.5056 Prec=0.3327 Rec=0.2881 F1=0.2914 Time=574.24s
+  -> new best model saved (F1=0.3131)
+Round 13/50 | Acc=0.5544 Prec=0.3527 Rec=0.3092 F1=0.3131 Time=570.18s
+Round 14/50 | Acc=0.5285 Prec=0.3425 Rec=0.2984 F1=0.3051 Time=569.16s
+  -> new best model saved (F1=0.3426)
+Round 15/50 | Acc=0.5996 Prec=0.3612 Rec=0.3437 F1=0.3426 Time=580.9s
+Round 16/50 | Acc=0.5961 Prec=0.3635 Rec=0.3480 F1=0.3392 Time=576.53s
+Round 17/50 | Acc=0.5789 Prec=0.3644 Rec=0.3473 F1=0.3376 Time=580.24s
+  -> new best model saved (F1=0.3638)
+Round 18/50 | Acc=0.6245 Prec=0.3845 Rec=0.3696 F1=0.3638 Time=578.1s
+  -> new best model saved (F1=0.3727)
+Round 19/50 | Acc=0.6342 Prec=0.4031 Rec=0.3783 F1=0.3727 Time=574.12s
+Round 20/50 | Acc=0.6300 Prec=0.4078 Rec=0.3673 F1=0.3688 Time=581.46s
+  -> new best model saved (F1=0.3874)
+Round 21/50 | Acc=0.6750 Prec=0.4079 Rec=0.3843 F1=0.3874 Time=577.76s
+  -> new best model saved (F1=0.3929)
+Round 22/50 | Acc=0.6921 Prec=0.4118 Rec=0.3857 F1=0.3929 Time=572.36s
+Round 23/50 | Acc=0.6808 Prec=0.4044 Rec=0.3863 F1=0.3862 Time=570.47s
+Round 24/50 | Acc=0.6867 Prec=0.4079 Rec=0.3913 F1=0.3908 Time=570.04s
+  -> new best model saved (F1=0.4107)
+Round 25/50 | Acc=0.7189 Prec=0.4334 Rec=0.4137 F1=0.4107 Time=572.56s
+  -> new best model saved (F1=0.4182)
+Round 26/50 | Acc=0.7373 Prec=0.4286 Rec=0.4230 F1=0.4182 Time=575.81s
+Round 27/50 | Acc=0.7189 Prec=0.4301 Rec=0.4083 F1=0.4091 Time=580.43s
+  -> new best model saved (F1=0.4291)
+Round 28/50 | Acc=0.7512 Prec=0.4432 Rec=0.4301 F1=0.4291 Time=571.24s
+Round 29/50 | Acc=0.7415 Prec=0.4500 Rec=0.4195 F1=0.4233 Time=572.53s
+Round 30/50 | Acc=0.7074 Prec=0.4402 Rec=0.4107 F1=0.4099 Time=566.5s
+Round 31/50 | Acc=0.7233 Prec=0.4402 Rec=0.4153 F1=0.4179 Time=569.1s
+  -> new best model saved (F1=0.4302)
+Round 32/50 | Acc=0.7474 Prec=0.4447 Rec=0.4305 F1=0.4302 Time=588.14s
+Round 33/50 | Acc=0.7344 Prec=0.4411 Rec=0.4234 F1=0.4236 Time=581.6s
+  -> new best model saved (F1=0.4397)
+Round 34/50 | Acc=0.7784 Prec=0.4536 Rec=0.4425 F1=0.4397 Time=571.11s
+  -> new best model saved (F1=0.4805)
+Round 35/50 | Acc=0.8592 Prec=0.4843 Rec=0.4815 F1=0.4805 Time=572.19s
+Round 36/50 | Acc=0.8187 Prec=0.4695 Rec=0.4595 F1=0.4598 Time=577.79s
+  -> new best model saved (F1=0.4942)
+Round 37/50 | Acc=0.8930 Prec=0.4948 Rec=0.4942 F1=0.4942 Time=573.99s
+  -> new best model saved (F1=0.4984)
+Round 38/50 | Acc=0.8964 Prec=0.4984 Rec=0.4987 F1=0.4984 Time=585.63s
+  -> new best model saved (F1=0.5023)
+Round 39/50 | Acc=0.9092 Prec=0.5025 Rec=0.5027 F1=0.5023 Time=573.53s
+Round 40/50 | Acc=0.8799 Prec=0.4887 Rec=0.4883 F1=0.4872 Time=580.31s
+Round 41/50 | Acc=0.9058 Prec=0.5023 Rec=0.5024 F1=0.5020 Time=594.62s
+Round 42/50 | Acc=0.9033 Prec=0.5005 Rec=0.5027 F1=0.5015 Time=591.12s
+Round 43/50 | Acc=0.8943 Prec=0.4994 Rec=0.5065 F1=0.5010 Time=576.55s
+Round 44/50 | Acc=0.8926 Prec=0.4983 Rec=0.5069 F1=0.5013 Time=576.87s
+Round 45/50 | Acc=0.8780 Prec=0.4909 Rec=0.5031 F1=0.4945 Time=584.45s
+Round 46/50 | Acc=0.8841 Prec=0.4939 Rec=0.5041 F1=0.4970 Time=597.94s
+Round 47/50 | Acc=0.8841 Prec=0.4955 Rec=0.4996 F1=0.4963 Time=581.07s
+Round 48/50 | Acc=0.8774 Prec=0.4920 Rec=0.4997 F1=0.4951 Time=583.33s
+  -> new best model saved (F1=0.5132)
+Round 49/50 | Acc=0.9127 Prec=0.5123 Rec=0.5142 F1=0.5132 Time=574.57s
+Round 50/50 | Acc=0.9079 Prec=0.5036 Rec=0.5074 F1=0.5051 Time=581.43s
+
+FedOpt training complete.
+Best F1 achieved: 0.5132
+Per-round metrics:
+  Round  1 | Acc=0.1595  Prec=0.1294  Rec=0.1260  F1=0.0569
+  Round  2 | Acc=0.0998  Prec=0.0989  Rec=0.1368  F1=0.0527
+  Round  3 | Acc=0.1990  Prec=0.1409  Rec=0.1208  F1=0.0849
+  Round  4 | Acc=0.3108  Prec=0.1825  Rec=0.1672  F1=0.1501
+  Round  5 | Acc=0.2802  Prec=0.2320  Rec=0.1592  F1=0.1274
+  Round  6 | Acc=0.3786  Prec=0.2636  Rec=0.2026  F1=0.1756
+  Round  7 | Acc=0.3941  Prec=0.3139  Rec=0.1936  F1=0.1815
+  Round  8 | Acc=0.4037  Prec=0.2983  Rec=0.2121  F1=0.2216
+  Round  9 | Acc=0.4150  Prec=0.3240  Rec=0.2210  F1=0.2192
+  Round 10 | Acc=0.4374  Prec=0.3086  Rec=0.2460  F1=0.2476
+  Round 11 | Acc=0.4916  Prec=0.3223  Rec=0.2795  F1=0.2830
+  Round 12 | Acc=0.5056  Prec=0.3327  Rec=0.2881  F1=0.2914
+  Round 13 | Acc=0.5544  Prec=0.3527  Rec=0.3092  F1=0.3131
+  Round 14 | Acc=0.5285  Prec=0.3425  Rec=0.2984  F1=0.3051
+  Round 15 | Acc=0.5996  Prec=0.3612  Rec=0.3437  F1=0.3426
+  Round 16 | Acc=0.5961  Prec=0.3635  Rec=0.3480  F1=0.3392
+  Round 17 | Acc=0.5789  Prec=0.3644  Rec=0.3473  F1=0.3376
+  Round 18 | Acc=0.6245  Prec=0.3845  Rec=0.3696  F1=0.3638
+  Round 19 | Acc=0.6342  Prec=0.4031  Rec=0.3783  F1=0.3727
+  Round 20 | Acc=0.6300  Prec=0.4078  Rec=0.3673  F1=0.3688
+  Round 21 | Acc=0.6750  Prec=0.4079  Rec=0.3843  F1=0.3874
+  Round 22 | Acc=0.6921  Prec=0.4118  Rec=0.3857  F1=0.3929
+  Round 23 | Acc=0.6808  Prec=0.4044  Rec=0.3863  F1=0.3862
+  Round 24 | Acc=0.6867  Prec=0.4079  Rec=0.3913  F1=0.3908
+  Round 25 | Acc=0.7189  Prec=0.4334  Rec=0.4137  F1=0.4107
+  Round 26 | Acc=0.7373  Prec=0.4286  Rec=0.4230  F1=0.4182
+  Round 27 | Acc=0.7189  Prec=0.4301  Rec=0.4083  F1=0.4091
+  Round 28 | Acc=0.7512  Prec=0.4432  Rec=0.4301  F1=0.4291
+  Round 29 | Acc=0.7415  Prec=0.4500  Rec=0.4195  F1=0.4233
+  Round 30 | Acc=0.7074  Prec=0.4402  Rec=0.4107  F1=0.4099
+  Round 31 | Acc=0.7233  Prec=0.4402  Rec=0.4153  F1=0.4179
+  Round 32 | Acc=0.7474  Prec=0.4447  Rec=0.4305  F1=0.4302
+  Round 33 | Acc=0.7344  Prec=0.4411  Rec=0.4234  F1=0.4236
+  Round 34 | Acc=0.7784  Prec=0.4536  Rec=0.4425  F1=0.4397
+  Round 35 | Acc=0.8592  Prec=0.4843  Rec=0.4815  F1=0.4805
+  Round 36 | Acc=0.8187  Prec=0.4695  Rec=0.4595  F1=0.4598
+  Round 37 | Acc=0.8930  Prec=0.4948  Rec=0.4942  F1=0.4942
+  Round 38 | Acc=0.8964  Prec=0.4984  Rec=0.4987  F1=0.4984
+  Round 39 | Acc=0.9092  Prec=0.5025  Rec=0.5027  F1=0.5023
+  Round 40 | Acc=0.8799  Prec=0.4887  Rec=0.4883  F1=0.4872
+  Round 41 | Acc=0.9058  Prec=0.5023  Rec=0.5024  F1=0.5020
+  Round 42 | Acc=0.9033  Prec=0.5005  Rec=0.5027  F1=0.5015
+  Round 43 | Acc=0.8943  Prec=0.4994  Rec=0.5065  F1=0.5010
+  Round 44 | Acc=0.8926  Prec=0.4983  Rec=0.5069  F1=0.5013
+  Round 45 | Acc=0.8780  Prec=0.4909  Rec=0.5031  F1=0.4945
+  Round 46 | Acc=0.8841  Prec=0.4939  Rec=0.5041  F1=0.4970
+  Round 47 | Acc=0.8841  Prec=0.4955  Rec=0.4996  F1=0.4963
+  Round 48 | Acc=0.8774  Prec=0.4920  Rec=0.4997  F1=0.4951
+  Round 49 | Acc=0.9127  Prec=0.5123  Rec=0.5142  F1=0.5132
+  Round 50 | Acc=0.9079  Prec=0.5036  Rec=0.5074  F1=0.5051
+
+Best model held-out test performance:
+{'accuracy': 0.9126771351972425, 'precision': 0.5123064852616439, 'recall': 0.5141752591291525, 'f1': 0.5131586561776331}
+
+Classification report (best model):
+                         precision    recall  f1-score   support
+
+                 Aphids       0.93      0.96      0.95       864
+          Aphids edited       0.00      0.00      0.00         8
+              Army worm       0.96      0.98      0.97       864
+       Army worm edited       0.00      0.00      0.00         8
+       Bacterial Blight       0.70      0.68      0.69       224
+Bacterial Blight edited       0.00      0.00      0.00         8
+       Bacterial blight       0.86      0.84      0.85       640
+                Healthy       0.97      0.96      0.96       864
+    Healthy leaf edited       0.00      0.00      0.00         8
+         Powdery Mildew       0.80      0.79      0.80       224
+  Powdery Mildew Edited       0.00      0.00      0.00         8
+         Powdery mildew       0.89      0.91      0.90       640
+            Target spot       0.94      0.94      0.94       854
+     Target spot edited       0.11      0.12      0.12         8
+
+               accuracy                           0.91      5222
+              macro avg       0.51      0.51      0.51      5222
+           weighted avg       0.91      0.91      0.91      5222
+
+/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+  cells[i][c] = re.sub('\\\\\|', '|', cell)
+/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+[NbConvertApp] Writing 37251 bytes to __notebook__.ipynb
+[NbConvertApp] Converting notebook __notebook__.ipynb to html
+[NbConvertApp] Writing 354891 bytes to __results__.html

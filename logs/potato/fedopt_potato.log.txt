@@ -1,0 +1,123 @@
+Device  : cuda
+Classes : ['Potato___Early_blight', 'Potato___Late_blight', 'Potato___healthy']
+Classes (3): ['Potato___Early_blight', 'Potato___Late_blight', 'Potato___healthy']
+Total   : 2152 images
+Train : 1721 | Test : 431
+
+── Client distribution ──
+  Client 0: 674 samples | {'Potato___Early_blight': 653, 'Potato___Late_blight': 17, 'Potato___healthy': 4}
+  Client 1: 138 samples | {'Potato___Early_blight': 48, 'Potato___Late_blight': 0, 'Potato___healthy': 90}
+  Client 2: 83 samples | {'Potato___Early_blight': 37, 'Potato___Late_blight': 23, 'Potato___healthy': 23}
+  Client 3: 42 samples | {'Potato___Early_blight': 41, 'Potato___Late_blight': 0, 'Potato___healthy': 1}
+  Client 4: 784 samples | {'Potato___Early_blight': 21, 'Potato___Late_blight': 760, 'Potato___healthy': 3}
+
+============================================================
+  Running FedOpt (FedAdam)  —  50 rounds
+  Server Adam: lr=0.001  β1=0.9  β2=0.99  ε=0.001
+============================================================
+Downloading: "https://download.pytorch.org/models/resnet18-f37072fd.pth" to /root/.cache/torch/hub/checkpoints/resnet18-f37072fd.pth
+
+
+  Round   1 | Acc=0.5104  Prec=0.4927  Rec=0.5104  F1=0.4683  [best=0.5104]
+  Round   5 | Acc=0.7448  Prec=0.6965  Rec=0.7448  F1=0.7120  [best=0.7448]
+  Round  10 | Acc=0.8237  Prec=0.7673  Rec=0.8237  F1=0.7899  [best=0.8237]
+  Round  15 | Acc=0.8492  Prec=0.7879  Rec=0.8492  F1=0.8157  [best=0.8492]
+  Round  20 | Acc=0.8631  Prec=0.8002  Rec=0.8631  F1=0.8300  [best=0.8654]
+  Round  25 | Acc=0.8886  Prec=0.8958  Rec=0.8886  F1=0.8616  [best=0.8886]
+  Round  30 | Acc=0.9095  Prec=0.9153  Rec=0.9095  F1=0.8898  [best=0.9095]
+  Round  35 | Acc=0.9165  Prec=0.9219  Rec=0.9165  F1=0.8988  [best=0.9165]
+  Round  40 | Acc=0.9211  Prec=0.9278  Rec=0.9211  F1=0.9015  [best=0.9234]
+  Round  45 | Acc=0.9350  Prec=0.9402  Rec=0.9350  F1=0.9226  [best=0.9350]
+  Round  50 | Acc=0.9420  Prec=0.9459  Rec=0.9420  F1=0.9335  [best=0.9420]
+
+  Restoring best model (Acc=0.9420)
+
+============================================================
+  FEDOPT — FINAL TEST RESULTS
+============================================================
+  Accuracy : 0.9420
+  Precision: 0.9465
+  Recall   : 0.9420
+  F1-Score : 0.9323
+
+Classification Report:
+                       precision    recall  f1-score   support
+
+Potato___Early_blight       0.99      0.99      0.99       200
+ Potato___Late_blight       0.90      0.98      0.94       200
+     Potato___healthy       1.00      0.35      0.52        31
+
+             accuracy                           0.94       431
+            macro avg       0.96      0.78      0.82       431
+         weighted avg       0.95      0.94      0.93       431
+
+Saved: fedopt_training_curves.png
+Saved: fedopt_confusion_matrix.png
+
+Per-round metrics:
+ round  accuracy  precision   recall       f1
+     1  0.510441   0.492726 0.510441 0.468278
+     2  0.584687   0.558925 0.584687 0.557721
+     3  0.642691   0.599153 0.642691 0.619249
+     4  0.721578   0.669385 0.721578 0.692930
+     5  0.744780   0.696452 0.744780 0.712006
+     6  0.765661   0.719794 0.765661 0.731167
+     7  0.779582   0.732480 0.779582 0.745110
+     8  0.798144   0.747732 0.798144 0.764117
+     9  0.807425   0.754981 0.807425 0.773679
+    10  0.823666   0.767260 0.823666 0.789910
+    11  0.830626   0.772432 0.830626 0.796955
+    12  0.835267   0.776337 0.835267 0.801670
+    13  0.839907   0.780279 0.839907 0.806374
+    14  0.849188   0.787936 0.849188 0.815742
+    15  0.849188   0.787936 0.849188 0.815742
+    16  0.849188   0.787936 0.849188 0.815742
+    17  0.853828   0.792044 0.853828 0.820422
+    18  0.856148   0.793875 0.856148 0.822772
+    19  0.865429   0.802365 0.865429 0.832113
+    20  0.863109   0.800201 0.863109 0.829974
+    21  0.870070   0.806743 0.870070 0.836958
+    22  0.877030   0.813404 0.877030 0.843928
+    23  0.879350   0.887205 0.879350 0.849409
+    24  0.881671   0.889446 0.881671 0.851731
+    25  0.888631   0.895843 0.888631 0.861587
+    26  0.888631   0.895843 0.888631 0.861587
+    27  0.893271   0.900415 0.893271 0.866224
+    28  0.893271   0.900415 0.893271 0.866224
+    29  0.893271   0.900415 0.893271 0.866224
+    30  0.909513   0.915335 0.909513 0.889768
+    31  0.909513   0.915335 0.909513 0.889768
+    32  0.909513   0.915335 0.909513 0.889768
+    33  0.911833   0.917689 0.911833 0.892084
+    34  0.914153   0.919577 0.914153 0.896448
+    35  0.916473   0.921941 0.916473 0.898764
+    36  0.916473   0.922352 0.916473 0.898895
+    37  0.921114   0.927205 0.921114 0.903525
+    38  0.923434   0.929660 0.923434 0.905839
+    39  0.921114   0.927825 0.921114 0.901478
+    40  0.921114   0.927825 0.921114 0.901478
+    41  0.925754   0.931511 0.925754 0.910029
+    42  0.925754   0.931511 0.925754 0.910029
+    43  0.930394   0.935839 0.930394 0.916377
+    44  0.935035   0.940189 0.935035 0.922579
+    45  0.935035   0.940189 0.935035 0.922579
+    46  0.937355   0.942681 0.937355 0.924895
+    47  0.939675   0.944561 0.939675 0.928648
+    48  0.939675   0.944561 0.939675 0.928648
+    49  0.941995   0.946458 0.941995 0.932276
+    50  0.941995   0.945904 0.941995 0.933473
+
+Model saved: fedopt_potato.pth
+
+FedOpt Done ✓
+/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+  cells[i][c] = re.sub('\\\\\|', '|', cell)
+/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+[NbConvertApp] Writing 169703 bytes to __notebook__.ipynb
+[NbConvertApp] Converting notebook __notebook__.ipynb to html
+[NbConvertApp] Support files will be in __results___files/
+[NbConvertApp] Making directory __results___files
+[NbConvertApp] Making directory __results___files
+[NbConvertApp] Writing 359217 bytes to __results__.html

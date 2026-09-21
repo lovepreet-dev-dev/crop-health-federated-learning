@@ -1,0 +1,113 @@
+CUDA OK — Tesla T4
+Classes (15): ['Aphid', 'Black Rust', 'Blast', 'Brown Rust', 'Common Root Rot', 'Fusarium Head Blight', 'Healthy', 'Leaf Blight', 'Mildew', 'Mite', 'Septoria', 'Smut', 'Stem fly', 'Tan spot', 'Yellow Rust']
+Total pooled: 13104
+
+Client distribution:
+  Client 1:  3231 samples | 15 classes
+  Client 2:  2453 samples | 15 classes
+  Client 3:  1570 samples | 12 classes
+  Client 4:  2144 samples | 15 classes
+  Client 5:  3706 samples | 15 classes
+Global val size: 2623
+Downloading: "https://download.pytorch.org/models/resnet18-f37072fd.pth" to /root/.cache/torch/hub/checkpoints/resnet18-f37072fd.pth
+
+
+ResNet18 → 15 classes
+
+=================================================================
+             FedProx Training — Wheat Plant Diseases             
+  Clients=5 | α=0.5 | μ=0.01
+  Rounds=10 | LocalEpochs=5 | LR=0.001
+=================================================================
+Round  1/10 | Acc=0.6630 | Prec=0.7068 | Rec=0.6630 | F1=0.6321
+Round  2/10 | Acc=0.7541 | Prec=0.7657 | Rec=0.7541 | F1=0.7395
+Round  3/10 | Acc=0.8010 | Prec=0.8014 | Rec=0.8010 | F1=0.7925
+Round  4/10 | Acc=0.8174 | Prec=0.8170 | Rec=0.8174 | F1=0.8098
+Round  5/10 | Acc=0.8269 | Prec=0.8251 | Rec=0.8269 | F1=0.8203
+Round  6/10 | Acc=0.8303 | Prec=0.8295 | Rec=0.8303 | F1=0.8241
+Round  7/10 | Acc=0.8357 | Prec=0.8335 | Rec=0.8357 | F1=0.8310
+Round  8/10 | Acc=0.8425 | Prec=0.8374 | Rec=0.8425 | F1=0.8372
+Round  9/10 | Acc=0.8452 | Prec=0.8415 | Rec=0.8452 | F1=0.8409
+Round 10/10 | Acc=0.8437 | Prec=0.8390 | Rec=0.8437 | F1=0.8387
+
+Best Accuracy: 0.8452 (84.52%)
+Final → Acc=0.8452 | Prec=0.8415 | Rec=0.8452 | F1=0.8409
+
+── Per-Client Performance ───────────────────────────────
+  Client 1: Acc=0.8872 | Prec=0.8961 | Rec=0.8872 | F1=0.8905
+  Client 2: Acc=0.7597 | Prec=0.7994 | Rec=0.7597 | F1=0.7652
+  Client 3: Acc=0.7611 | Prec=0.9100 | Rec=0.7611 | F1=0.8122
+  Client 4: Acc=0.8089 | Prec=0.8644 | Rec=0.8089 | F1=0.8203
+  Client 5: Acc=0.9218 | Prec=0.9297 | Rec=0.9218 | F1=0.9230
+
+── Config ───────────────────────────────────────────────
+  Dataset         : Wheat Plant Diseases
+  Algorithm       : FedProx
+  Model           : ResNet18
+  Clients         : 5
+  Alpha           : 0.5
+  Mu              : 0.01
+  Rounds          : 10
+  LocalEpochs     : 5
+  LR              : 0.001
+  Momentum        : 0.9
+  BatchSize       : 32
+  Classes         : 15
+  Samples         : 13104
+  BestAcc         : 84.52%
+  FinalF1         : 0.8409
+CUDA OK — Tesla T4
+Classes (15): ['Aphid', 'Black Rust', 'Blast', 'Brown Rust', 'Common Root Rot', 'Fusarium Head Blight', 'Healthy', 'Leaf Blight', 'Mildew', 'Mite', 'Septoria', 'Smut', 'Stem fly', 'Tan spot', 'Yellow Rust']
+Total pooled: 13104
+
+Client distribution:
+  Client 1:  3231 samples | 15 classes
+  Client 2:  2453 samples | 15 classes
+  Client 3:  1570 samples | 12 classes
+  Client 4:  2144 samples | 15 classes
+  Client 5:  3706 samples | 15 classes
+Global val size: 2623
+ResNet18 → 15 classes
+
+=================================================================
+            SCAFFOLD Training — Wheat Plant Diseases             
+  Clients=5 | α=0.5
+  Rounds=10 | LocalEpochs=5 | LR=0.001
+=================================================================
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/usr/local/lib/python3.12/dist-packages/papermill/execute.py", line 131, in execute_notebook
+    raise_for_execution_errors(nb, output_path)
+  File "/usr/local/lib/python3.12/dist-packages/papermill/execute.py", line 251, in raise_for_execution_errors
+    raise error
+papermill.exceptions.PapermillExecutionError: 
+---------------------------------------------------------------------------
+Exception encountered at "In [2]":
+---------------------------------------------------------------------------
+RuntimeError                              Traceback (most recent call last)
+/tmp/ipykernel_23/1027036611.py in <cell line: 0>()
+    233         c_locals[c] = c_new
+    234 
+--> 235     global_model, c_global = scaffold_aggregate(
+    236         global_model, all_dy, all_dc, c_global, sizes)
+    237 
+
+/tmp/ipykernel_23/1027036611.py in scaffold_aggregate(global_model, client_delta_y, client_delta_c, c_global, client_sizes)
+    183                             for c in range(NUM_CLIENTS)).to(DEVICE))
+    184         for i in range(len(c_global)):
+--> 185             c_global[i] = (c_global[i].to(DEVICE) +
+    186                            sum(client_delta_c[c][i] for c in range(NUM_CLIENTS))
+    187                            / NUM_CLIENTS).cpu()
+
+RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cuda:0 and cpu!
+
+/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+  cells[i][c] = re.sub('\\\\\|', '|', cell)
+/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+[NbConvertApp] Writing 249011 bytes to __notebook__.ipynb
+[NbConvertApp] Converting notebook __notebook__.ipynb to html
+[NbConvertApp] Support files will be in __results___files/
+[NbConvertApp] Making directory __results___files
+[NbConvertApp] Writing 545978 bytes to __results__.html

@@ -1,0 +1,237 @@
+scipy already installed: Name: scipy
+Scanning dataset structure...
+CUDA OK — Tesla T4
+Train dir : /kaggle/input/datasets/kaustubhb999/tomatoleaf/tomato/train  exists=True
+Test  dir : /kaggle/input/datasets/kaustubhb999/tomatoleaf/tomato/val   exists=True
+
+Classes (10): ['Tomato___Bacterial_spot', 'Tomato___Early_blight', 'Tomato___Late_blight', 'Tomato___Leaf_Mold', 'Tomato___Septoria_leaf_spot', 'Tomato___Spider_mites Two-spotted_spider_mite', 'Tomato___Target_Spot', 'Tomato___Tomato_Yellow_Leaf_Curl_Virus', 'Tomato___Tomato_mosaic_virus', 'Tomato___healthy']
+Train images : 10000
+Test  images : 1000
+Total pooled : 11000
+
+Client data distribution:
+  Client 1:  1849 samples | 10 classes
+  Client 2:  2412 samples | 10 classes
+  Client 3:  2167 samples | 10 classes
+  Client 4:  1706 samples | 9 classes
+  Client 5:  2866 samples | 10 classes
+Client 1: train=1479, val=370
+Client 2: train=1929, val=483
+Client 3: train=1733, val=434
+Client 4: train=1364, val=342
+Client 5: train=2292, val=574
+
+Global val set size: 2203
+Downloading: "https://download.pytorch.org/models/resnet18-f37072fd.pth" to /root/.cache/torch/hub/checkpoints/resnet18-f37072fd.pth
+
+
+ResNet18 → 10 output classes
+
+=================================================================
+              FedMA Training — Tomato Leaf Disease               
+  Clients=5 | α=0.5
+  Rounds=10 | LocalEpochs=5 | LR=0.001
+  Matching: Hungarian algorithm (cosine similarity)
+=================================================================
+Round  1/10 | Acc=0.8693 | Prec=0.8791 | Rec=0.8693 | F1=0.8601
+Round  2/10 | Acc=0.9365 | Prec=0.9389 | Rec=0.9365 | F1=0.9336
+Round  3/10 | Acc=0.9528 | Prec=0.9550 | Rec=0.9528 | F1=0.9514
+Round  4/10 | Acc=0.9641 | Prec=0.9647 | Rec=0.9641 | F1=0.9635
+Round  5/10 | Acc=0.9728 | Prec=0.9732 | Rec=0.9728 | F1=0.9723
+Round  6/10 | Acc=0.9741 | Prec=0.9746 | Rec=0.9741 | F1=0.9738
+Round  7/10 | Acc=0.9773 | Prec=0.9776 | Rec=0.9773 | F1=0.9771
+Round  8/10 | Acc=0.9809 | Prec=0.9811 | Rec=0.9809 | F1=0.9808
+Round  9/10 | Acc=0.9850 | Prec=0.9851 | Rec=0.9850 | F1=0.9850
+Round 10/10 | Acc=0.9832 | Prec=0.9833 | Rec=0.9832 | F1=0.9831
+
+=================================================================
+Best Accuracy: 0.9850  (98.50%)
+=================================================================
+Best model saved → fedma_tomatoleaf_best.pth
+
+── Final Results (Best Model) ──────────────────────────
+  Accuracy  : 0.9850  (98.50%)
+  Precision : 0.9851
+  Recall    : 0.9850
+  F1-Score  : 0.9850
+────────────────────────────────────────────────────────
+Plot saved → fedma_tomatoleaf_metrics.png
+
+── Per-Client Validation Performance (Best Model) ──────
+  Client 1: Acc=0.9676 | Prec=0.9737 | Rec=0.9676 | F1=0.9690
+  Client 2: Acc=0.9917 | Prec=0.9938 | Rec=0.9917 | F1=0.9925
+  Client 3: Acc=0.9839 | Prec=0.9873 | Rec=0.9839 | F1=0.9847
+  Client 4: Acc=0.9912 | Prec=0.9956 | Rec=0.9912 | F1=0.9928
+  Client 5: Acc=0.9878 | Prec=0.9902 | Rec=0.9878 | F1=0.9887
+
+── Experiment Configuration ─────────────────────────────
+  Dataset                     : Tomato Leaf Disease (kaustubhb999)
+  Model                       : ResNet18
+  FL Algorithm                : FedMA
+  Neuron Matching             : Hungarian algorithm (cosine similarity)
+  Matching Scope              : Layer-wise (intra-layer, ResNet compatible)
+  Num Clients                 : 5
+  Dirichlet Alpha             : 0.5
+  Local Epochs                : 5
+  Global Rounds               : 10
+  Batch Size                  : 32
+  Learning Rate               : 0.001
+  Momentum                    : 0.9
+  Optimizer                   : SGD
+  Num Classes                 : 10
+  Total Samples               : 11000
+  Best Accuracy               : 98.50%
+  Final F1-Score              : 0.9850
+Scanning dataset structure...
+CUDA OK — Tesla T4
+Train dir : /kaggle/input/datasets/kaustubhb999/tomatoleaf/tomato/train  exists=True
+Test  dir : /kaggle/input/datasets/kaustubhb999/tomatoleaf/tomato/val   exists=True
+
+Classes (10): ['Tomato___Bacterial_spot', 'Tomato___Early_blight', 'Tomato___Late_blight', 'Tomato___Leaf_Mold', 'Tomato___Septoria_leaf_spot', 'Tomato___Spider_mites Two-spotted_spider_mite', 'Tomato___Target_Spot', 'Tomato___Tomato_Yellow_Leaf_Curl_Virus', 'Tomato___Tomato_mosaic_virus', 'Tomato___healthy']
+Train images : 10000
+Test  images : 1000
+Total pooled : 11000
+
+Client data distribution:
+  Client 1:  1849 samples | 10 classes
+  Client 2:  2412 samples | 10 classes
+  Client 3:  2167 samples | 10 classes
+  Client 4:  1706 samples | 9 classes
+  Client 5:  2866 samples | 10 classes
+Client 1: train=1479, val=370
+Client 2: train=1929, val=483
+Client 3: train=1733, val=434
+Client 4: train=1364, val=342
+Client 5: train=2292, val=574
+
+Global val set size: 2203
+ResNet18 → 10 output classes
+
+=================================================================
+             SCAFFOLD Training — Tomato Leaf Disease             
+  Clients=5 | α=0.5
+  Rounds=10 | LocalEpochs=5 | LR=0.001
+=================================================================
+Round   1/10 | Acc=0.4458 | Prec=0.5495 | Rec=0.4458 | F1=0.3968
+Round   5/10 | Acc=0.5465 | Prec=0.6598 | Rec=0.5465 | F1=0.4876
+Round  10/10 | Acc=0.5243 | Prec=0.6808 | Rec=0.5243 | F1=0.4937
+
+=================================================================
+Best Accuracy: 0.5511  (55.11%)
+=================================================================
+Best model saved → scaffold_tomatoleaf_best.pth
+
+── Final Results (Best Model) ──────────────────────────
+  Accuracy  : 0.5511  (55.11%)
+  Precision : 0.6751
+  Recall    : 0.5511
+  F1-Score  : 0.4836
+────────────────────────────────────────────────────────
+Plot saved → scaffold_tomatoleaf_metrics.png
+
+── Per-Client Validation Performance (Best Model) ──────
+  Client 1: Acc=0.2784 | Prec=0.8221 | Rec=0.2784 | F1=0.2514
+  Client 2: Acc=0.5859 | Prec=0.6630 | Rec=0.5859 | F1=0.5503
+  Client 3: Acc=0.4862 | Prec=0.7234 | Rec=0.4862 | F1=0.4284
+  Client 4: Acc=0.6988 | Prec=0.8500 | Rec=0.6988 | F1=0.7376
+  Client 5: Acc=0.6585 | Prec=0.7356 | Rec=0.6585 | F1=0.6656
+
+── Experiment Configuration ─────────────────────────────
+  Dataset                     : Tomato Leaf Disease (kaustubhb999)
+  Model                       : ResNet18
+  FL Algorithm                : SCAFFOLD
+  SCAFFOLD Option             : Option II (control variate correction)
+  Num Clients                 : 5
+  Dirichlet Alpha             : 0.5
+  Local Epochs                : 5
+  Global Rounds               : 10
+  Batch Size                  : 32
+  Learning Rate               : 0.001
+  Optimizer                   : SGD (no momentum — SCAFFOLD standard)
+  Num Classes                 : 10
+  Total Samples               : 11000
+  Best Accuracy               : 55.11%
+  Final F1-Score              : 0.4836
+Scanning dataset structure...
+CUDA OK — Tesla T4
+Train dir : /kaggle/input/datasets/kaustubhb999/tomatoleaf/tomato/train  exists=True
+Test  dir : /kaggle/input/datasets/kaustubhb999/tomatoleaf/tomato/val   exists=True
+
+Classes (10): ['Tomato___Bacterial_spot', 'Tomato___Early_blight', 'Tomato___Late_blight', 'Tomato___Leaf_Mold', 'Tomato___Septoria_leaf_spot', 'Tomato___Spider_mites Two-spotted_spider_mite', 'Tomato___Target_Spot', 'Tomato___Tomato_Yellow_Leaf_Curl_Virus', 'Tomato___Tomato_mosaic_virus', 'Tomato___healthy']
+Train images : 10000
+Test  images : 1000
+Total pooled : 11000
+
+Client data distribution:
+  Client 1:  1849 samples | 10 classes
+  Client 2:  2412 samples | 10 classes
+  Client 3:  2167 samples | 10 classes
+  Client 4:  1706 samples | 9 classes
+  Client 5:  2866 samples | 10 classes
+Client 1: train=1479, val=370
+Client 2: train=1929, val=483
+Client 3: train=1733, val=434
+Client 4: train=1364, val=342
+Client 5: train=2292, val=574
+
+Global val set size: 2203
+ResNet18 → 10 output classes
+
+=================================================================
+         FedOpt (FedAdam) Training — Tomato Leaf Disease         
+  Clients=5 | α=0.5
+  Rounds=10 | LocalEpochs=5
+  ClientLR=0.001 | ServerLR=0.01
+  β₁=0.9 | β₂=0.99 | τ=0.001
+=================================================================
+Round   1/10 | Acc=0.3355 | Prec=0.3576 | Rec=0.3355 | F1=0.2257
+Round   5/10 | Acc=0.1630 | Prec=0.0720 | Rec=0.1630 | F1=0.0922
+Round  10/10 | Acc=0.1008 | Prec=0.1538 | Rec=0.1008 | F1=0.0278
+
+=================================================================
+Best Accuracy: 0.3355  (33.55%)
+=================================================================
+Best model saved → fedopt_tomatoleaf_best.pth
+
+── Final Results (Best Model) ──────────────────────────
+  Accuracy  : 0.3355  (33.55%)
+  Precision : 0.3576
+  Recall    : 0.3355
+  F1-Score  : 0.2257
+────────────────────────────────────────────────────────
+Plot saved → fedopt_tomatoleaf_metrics.png
+
+── Per-Client Validation Performance (Best Model) ──────
+  Client 1: Acc=0.2297 | Prec=0.1262 | Rec=0.2297 | F1=0.1574
+  Client 2: Acc=0.3209 | Prec=0.6299 | Rec=0.3209 | F1=0.2606
+  Client 3: Acc=0.4009 | Prec=0.2221 | Rec=0.4009 | F1=0.2804
+  Client 4: Acc=0.4708 | Prec=0.7206 | Rec=0.4708 | F1=0.4508
+  Client 5: Acc=0.2857 | Prec=0.2855 | Rec=0.2857 | F1=0.1922
+
+── Experiment Configuration ─────────────────────────────
+  Dataset                     : Tomato Leaf Disease (kaustubhb999)
+  Model                       : ResNet18
+  FL Algorithm                : FedOpt (FedAdam)
+  Client Optimizer            : SGD (lr=0.001, momentum=0.9)
+  Server Optimizer            : Adam (η=0.01, β₁=0.9, β₂=0.99, τ=0.001)
+  Num Clients                 : 5
+  Dirichlet Alpha             : 0.5
+  Local Epochs                : 5
+  Global Rounds               : 10
+  Batch Size                  : 32
+  Num Classes                 : 10
+  Total Samples               : 11000
+  Best Accuracy               : 33.55%
+  Final F1-Score              : 0.2257
+/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+  cells[i][c] = re.sub('\\\\\|', '|', cell)
+/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+[NbConvertApp] Writing 671334 bytes to __notebook__.ipynb
+[NbConvertApp] Converting notebook __notebook__.ipynb to html
+[NbConvertApp] Support files will be in __results___files/
+[NbConvertApp] Making directory __results___files
+[NbConvertApp] Making directory __results___files
+[NbConvertApp] Making directory __results___files
+[NbConvertApp] Writing 554674 bytes to __results__.html

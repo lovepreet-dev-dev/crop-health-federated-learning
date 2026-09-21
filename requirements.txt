@@ -1,0 +1,11 @@
+# Experiments were run on Kaggle with Python 3.12 and PyTorch 2.10 (CUDA 12.8).
+torch>=2.0
+torchvision
+numpy
+pandas
+scipy
+scikit-learn
+matplotlib
+seaborn
+Pillow
+tqdm

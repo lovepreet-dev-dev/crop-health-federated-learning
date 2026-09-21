@@ -1,0 +1,233 @@
+Using device: cuda
+Dataset root: /kaggle/input/datasets/kushagra3204/wheat-plant-diseases/data  (3 classes)
+Classes (3): ['test', 'train', 'valid']
+  Client 0: 323 samples
+  Client 1: 735 samples
+  Client 2: 4951 samples
+  Client 3: 7896 samples
+  Client 4: 249 samples
+
+============================================================
+  FedOpt — Wheat Plant Diseases Dataset
+============================================================
+Downloading: "https://download.pytorch.org/models/resnet18-f37072fd.pth" to /root/.cache/torch/hub/checkpoints/resnet18-f37072fd.pth
+
+
+
+[Round 1/50] — client training …
+  [Round 01] Acc=0.0576  Prec=0.0033  Rec=0.0576  F1=0.0063  (1148.7s)
+
+[Round 2/50] — client training …
+  [Round 02] Acc=0.9194  Prec=0.8460  Rec=0.9194  F1=0.8812  (1133.4s)
+
+[Round 3/50] — client training …
+  [Round 03] Acc=0.0576  Prec=0.0033  Rec=0.0576  F1=0.0063  (949.2s)
+
+[Round 4/50] — client training …
+  [Round 04] Acc=0.0576  Prec=0.0033  Rec=0.0576  F1=0.0063  (956.9s)
+
+[Round 5/50] — client training …
+  [Round 05] Acc=0.0576  Prec=0.0033  Rec=0.0576  F1=0.0063  (945.1s)
+
+[Round 6/50] — client training …
+  [Round 06] Acc=0.0576  Prec=0.0033  Rec=0.0576  F1=0.0063  (945.9s)
+
+[Round 7/50] — client training …
+  [Round 07] Acc=0.0576  Prec=0.0033  Rec=0.0576  F1=0.0063  (942.3s)
+
+[Round 8/50] — client training …
+  [Round 08] Acc=0.0576  Prec=0.0033  Rec=0.0576  F1=0.0063  (932.2s)
+
+[Round 9/50] — client training …
+  [Round 09] Acc=0.0576  Prec=0.0033  Rec=0.0576  F1=0.0063  (944.2s)
+
+[Round 10/50] — client training …
+  [Round 10] Acc=0.0576  Prec=0.0033  Rec=0.0576  F1=0.0063  (943.0s)
+
+[Round 11/50] — client training …
+  [Round 11] Acc=0.0576  Prec=0.0033  Rec=0.0576  F1=0.0063  (942.6s)
+
+[Round 12/50] — client training …
+  [Round 12] Acc=0.0576  Prec=0.0033  Rec=0.0576  F1=0.0063  (970.5s)
+
+[Round 13/50] — client training …
+  [Round 13] Acc=0.0576  Prec=0.0033  Rec=0.0576  F1=0.0063  (964.8s)
+
+[Round 14/50] — client training …
+  [Round 14] Acc=0.0576  Prec=0.0033  Rec=0.0576  F1=0.0063  (980.0s)
+
+[Round 15/50] — client training …
+  [Round 15] Acc=0.0576  Prec=0.0033  Rec=0.0576  F1=0.0063  (1038.7s)
+
+[Round 16/50] — client training …
+  [Round 16] Acc=0.0576  Prec=0.0033  Rec=0.0576  F1=0.0063  (980.9s)
+
+[Round 17/50] — client training …
+  [Round 17] Acc=0.0576  Prec=0.0033  Rec=0.0576  F1=0.0063  (983.9s)
+
+[Round 18/50] — client training …
+  [Round 18] Acc=0.0576  Prec=0.0033  Rec=0.0576  F1=0.0063  (976.7s)
+
+[Round 19/50] — client training …
+  [Round 19] Acc=0.0576  Prec=0.0033  Rec=0.0576  F1=0.0063  (989.3s)
+
+[Round 20/50] — client training …
+  [Round 20] Acc=0.0576  Prec=0.0033  Rec=0.0576  F1=0.0063  (987.5s)
+
+[Round 21/50] — client training …
+  [Round 21] Acc=0.0576  Prec=0.0033  Rec=0.0576  F1=0.0063  (985.2s)
+
+[Round 22/50] — client training …
+  [Round 22] Acc=0.0576  Prec=0.0033  Rec=0.0576  F1=0.0063  (1033.9s)
+
+[Round 23/50] — client training …
+  [Round 23] Acc=0.0576  Prec=0.0033  Rec=0.0576  F1=0.0063  (971.2s)
+
+[Round 24/50] — client training …
+  [Round 24] Acc=0.0576  Prec=0.0033  Rec=0.0576  F1=0.0063  (990.7s)
+
+[Round 25/50] — client training …
+  [Round 25] Acc=0.0576  Prec=0.0033  Rec=0.0576  F1=0.0063  (983.9s)
+
+[Round 26/50] — client training …
+  [Round 26] Acc=0.0576  Prec=0.0033  Rec=0.0576  F1=0.0063  (985.9s)
+
+[Round 27/50] — client training …
+  [Round 27] Acc=0.0576  Prec=0.0033  Rec=0.0576  F1=0.0063  (981.5s)
+
+[Round 28/50] — client training …
+  [Round 28] Acc=0.0576  Prec=0.0033  Rec=0.0576  F1=0.0063  (962.5s)
+
+[Round 29/50] — client training …
+  [Round 29] Acc=0.0576  Prec=0.0033  Rec=0.0576  F1=0.0063  (993.0s)
+
+[Round 30/50] — client training …
+  [Round 30] Acc=0.0576  Prec=0.0033  Rec=0.0576  F1=0.0063  (988.9s)
+
+[Round 31/50] — client training …
+  [Round 31] Acc=0.0576  Prec=0.0033  Rec=0.0576  F1=0.0063  (973.6s)
+
+[Round 32/50] — client training …
+  [Round 32] Acc=0.0576  Prec=0.0033  Rec=0.0576  F1=0.0063  (981.5s)
+
+[Round 33/50] — client training …
+  [Round 33] Acc=0.0576  Prec=0.0033  Rec=0.0576  F1=0.0063  (989.8s)
+
+[Round 34/50] — client training …
+  [Round 34] Acc=0.0576  Prec=0.0033  Rec=0.0576  F1=0.0063  (991.5s)
+
+[Round 35/50] — client training …
+  [Round 35] Acc=0.0576  Prec=0.0033  Rec=0.0576  F1=0.0063  (991.8s)
+
+[Round 36/50] — client training …
+  [Round 36] Acc=0.0576  Prec=0.0033  Rec=0.0576  F1=0.0063  (979.9s)
+
+[Round 37/50] — client training …
+  [Round 37] Acc=0.0576  Prec=0.0033  Rec=0.0576  F1=0.0063  (969.6s)
+
+[Round 38/50] — client training …
+  [Round 38] Acc=0.0576  Prec=0.0033  Rec=0.0576  F1=0.0063  (959.1s)
+
+[Round 39/50] — client training …
+  [Round 39] Acc=0.0576  Prec=0.0033  Rec=0.0576  F1=0.0063  (985.5s)
+
+[Round 40/50] — client training …
+  [Round 40] Acc=0.0576  Prec=0.0033  Rec=0.0576  F1=0.0063  (992.0s)
+
+[Round 41/50] — client training …
+  [Round 41] Acc=0.0576  Prec=0.0033  Rec=0.0576  F1=0.0063  (1002.6s)
+
+[Round 42/50] — client training …
+  [Round 42] Acc=0.0576  Prec=0.0033  Rec=0.0576  F1=0.0063  (996.8s)
+
+[Round 43/50] — client training …
+  [Round 43] Acc=0.0576  Prec=0.0033  Rec=0.0576  F1=0.0063  (985.0s)
+
+[Round 44/50] — client training …
+Timeout waiting for execute reply (43200s).
+[ColabKernelApp] ERROR | Exception in control handler:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/dist-packages/ipykernel/kernelbase.py", line 334, in process_control
+    await result
+  File "/usr/local/lib/python3.12/dist-packages/ipykernel/kernelbase.py", line 917, in shutdown_request
+    await self._at_shutdown()
+  File "/usr/local/lib/python3.12/dist-packages/ipykernel/kernelbase.py", line 1303, in _at_shutdown
+    self.session.send(
+  File "/usr/local/lib/python3.12/dist-packages/jupyter_client/session.py", line 859, in send
+    stream.send_multipart(to_send, copy=copy)
+  File "/usr/local/lib/python3.12/dist-packages/ipykernel/iostream.py", line 286, in send_multipart
+    return self.io_thread.send_multipart(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/ipykernel/iostream.py", line 219, in send_multipart
+    self.schedule(lambda: self._really_send(*args, **kwargs))
+  File "/usr/local/lib/python3.12/dist-packages/ipykernel/iostream.py", line 212, in schedule
+    f()
+  File "/usr/local/lib/python3.12/dist-packages/ipykernel/iostream.py", line 219, in <lambda>
+    self.schedule(lambda: self._really_send(*args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/ipykernel/iostream.py", line 230, in _really_send
+    self.socket.send_multipart(msg, *args, **kwargs)
+  File "/usr/local/lib/python3.12/dist-packages/zmq/sugar/socket.py", line 758, in send_multipart
+    self.send(msg, zmq.SNDMORE | flags, copy=copy, track=track)
+  File "/usr/local/lib/python3.12/dist-packages/zmq/sugar/socket.py", line 707, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1134, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1209, in zmq.backend.cython._zmq._check_closed
+zmq.error.ZMQError: Socket operation on non-socket
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/dist-packages/nbclient/client.py", line 730, in _async_poll_for_reply
+    msg = await ensure_async(self.kc.shell_channel.get_msg(timeout=new_timeout))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/nbclient/util.py", line 96, in ensure_async
+    result = await obj
+             ^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/jupyter_client/channels.py", line 230, in get_msg
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/usr/local/lib/python3.12/dist-packages/papermill/execute.py", line 116, in execute_notebook
+    nb = papermill_engines.execute_notebook_with_engine(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/papermill/engines.py", line 49, in execute_notebook_with_engine
+    return self.get_engine(engine_name).execute_notebook(nb, kernel_name, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/papermill/engines.py", line 371, in execute_notebook
+    cls.execute_managed_notebook(nb_man, kernel_name, log_output=log_output, **kwargs)
+  File "/usr/local/lib/python3.12/dist-packages/papermill/engines.py", line 443, in execute_managed_notebook
+    return PapermillNotebookClient(nb_man, **final_kwargs).execute()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/papermill/clientwrap.py", line 45, in execute
+    self.papermill_execute_cells()
+  File "/usr/local/lib/python3.12/dist-packages/papermill/clientwrap.py", line 72, in papermill_execute_cells
+    self.execute_cell(cell, index)
+  File "/usr/local/lib/python3.12/dist-packages/nbclient/util.py", line 84, in wrapped
+    return just_run(coro(*args, **kwargs))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/nbclient/util.py", line 62, in just_run
+    return loop.run_until_complete(coro)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/nbclient/client.py", line 949, in async_execute_cell
+    exec_reply = await self.task_poll_for_reply
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/nbclient/client.py", line 754, in _async_poll_for_reply
+    await self._async_handle_timeout(timeout, cell)
+  File "/usr/local/lib/python3.12/dist-packages/nbclient/client.py", line 801, in _async_handle_timeout
+    raise CellTimeoutError.error_from_timeout_and_cell(
+nbclient.exceptions.CellTimeoutError: A cell timed out while it was being executed, after 43200 seconds.
+The message was: Cell execution timed out.
+Here is a preview of the cell contents:
+-------------------
+['"""', 'FedOpt Implementation for Wheat Plant Diseases Dataset', 'Dataset: https://www.kaggle.com/datasets/kushagra3204/wheat-plant-diseases', 'Settings:', '  - 5 clients, Dirichlet non-IID (alpha=0.5)']
+...
+['    print(f"  Results saved to: {OUTPUT_DIR}")', '    print("=" * 60)', '', 'if __name__ == "__main__":', '    main()']
+-------------------
+

@@ -1,0 +1,9 @@
+=== Confusion Matrix — FedOpt / WheatPatNet  [round_02] ===
+
+        test  train  valid
+--------------------------
+test       0    163      0
+train      0   2602      1
+valid      0     64      0
+
+Row = Actual, Col = Predicted

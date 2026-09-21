@@ -1,0 +1,408 @@
+PyTorch: 2.10.0+cu128
+CUDA available: True
+Device: cuda
+Using ImageFolder root: /kaggle/input/datasets/abdallahalidev/plantvillage-dataset/grayscale
+Classes: 38
+Images: 54305
+   class_idx  count
+0          0    630
+1          1    621
+2          2    275
+3          3   1645
+4          4   1502
+Train / Val / Test: 43429 5417 5459
+Client 0: 8702 samples
+Client 1: 8692 samples
+Client 2: 8685 samples
+Client 3: 8677 samples
+Client 4: 8673 samples
+
+Round 1/50 | clients: [0, 1, 2, 3, 4]
+/tmp/ipykernel_22/105989898.py:39: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=(CFG.amp and device.type == 'cuda'))
+
+/tmp/ipykernel_22/105989898.py:39: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=(CFG.amp and device.type == 'cuda'))
+/tmp/ipykernel_22/105989898.py:52: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+
+/tmp/ipykernel_22/105989898.py:52: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+/tmp/ipykernel_22/3248129013.py:12: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+
+/tmp/ipykernel_22/3248129013.py:12: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+val_acc=0.1265 val_precision=0.0091 val_recall=0.0502 val_f1=0.0142 time=34.6m
+
+Round 2/50 | clients: [0, 1, 2, 3, 4]
+/tmp/ipykernel_22/105989898.py:39: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=(CFG.amp and device.type == 'cuda'))
+
+/tmp/ipykernel_22/105989898.py:39: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=(CFG.amp and device.type == 'cuda'))
+/tmp/ipykernel_22/105989898.py:52: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+
+/tmp/ipykernel_22/105989898.py:52: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+/tmp/ipykernel_22/3248129013.py:12: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+
+/tmp/ipykernel_22/3248129013.py:12: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+val_acc=0.7212 val_precision=0.7549 val_recall=0.6356 val_f1=0.6496 time=31.8m
+
+Round 3/50 | clients: [0, 1, 2, 3, 4]
+/tmp/ipykernel_22/105989898.py:39: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=(CFG.amp and device.type == 'cuda'))
+
+/tmp/ipykernel_22/105989898.py:39: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=(CFG.amp and device.type == 'cuda'))
+/tmp/ipykernel_22/105989898.py:52: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+
+/tmp/ipykernel_22/105989898.py:52: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+/tmp/ipykernel_22/3248129013.py:12: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+
+/tmp/ipykernel_22/3248129013.py:12: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+val_acc=0.8796 val_precision=0.8681 val_recall=0.8430 val_f1=0.8459 time=31.8m
+
+Round 4/50 | clients: [0, 1, 2, 3, 4]
+/tmp/ipykernel_22/105989898.py:39: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=(CFG.amp and device.type == 'cuda'))
+
+/tmp/ipykernel_22/105989898.py:39: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=(CFG.amp and device.type == 'cuda'))
+/tmp/ipykernel_22/105989898.py:52: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+
+/tmp/ipykernel_22/105989898.py:52: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+/tmp/ipykernel_22/3248129013.py:12: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+
+/tmp/ipykernel_22/3248129013.py:12: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+val_acc=0.9151 val_precision=0.9000 val_recall=0.8927 val_f1=0.8916 time=31.8m
+
+Round 5/50 | clients: [0, 1, 2, 3, 4]
+/tmp/ipykernel_22/105989898.py:39: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=(CFG.amp and device.type == 'cuda'))
+
+/tmp/ipykernel_22/105989898.py:39: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=(CFG.amp and device.type == 'cuda'))
+/tmp/ipykernel_22/105989898.py:52: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+
+/tmp/ipykernel_22/105989898.py:52: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+/tmp/ipykernel_22/3248129013.py:12: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+
+/tmp/ipykernel_22/3248129013.py:12: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+val_acc=0.9275 val_precision=0.9095 val_recall=0.9090 val_f1=0.9057 time=31.8m
+
+Round 6/50 | clients: [0, 1, 2, 3, 4]
+/tmp/ipykernel_22/105989898.py:39: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=(CFG.amp and device.type == 'cuda'))
+
+/tmp/ipykernel_22/105989898.py:39: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=(CFG.amp and device.type == 'cuda'))
+/tmp/ipykernel_22/105989898.py:52: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+
+/tmp/ipykernel_22/105989898.py:52: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+/tmp/ipykernel_22/3248129013.py:12: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+
+/tmp/ipykernel_22/3248129013.py:12: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+val_acc=0.9324 val_precision=0.9314 val_recall=0.9138 val_f1=0.9190 time=31.8m
+
+Round 7/50 | clients: [0, 1, 2, 3, 4]
+/tmp/ipykernel_22/105989898.py:39: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=(CFG.amp and device.type == 'cuda'))
+
+/tmp/ipykernel_22/105989898.py:39: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=(CFG.amp and device.type == 'cuda'))
+/tmp/ipykernel_22/105989898.py:52: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+
+/tmp/ipykernel_22/105989898.py:52: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+/tmp/ipykernel_22/3248129013.py:12: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+
+/tmp/ipykernel_22/3248129013.py:12: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+val_acc=0.9441 val_precision=0.9345 val_recall=0.9281 val_f1=0.9289 time=31.9m
+
+Round 8/50 | clients: [0, 1, 2, 3, 4]
+/tmp/ipykernel_22/105989898.py:39: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=(CFG.amp and device.type == 'cuda'))
+
+/tmp/ipykernel_22/105989898.py:39: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=(CFG.amp and device.type == 'cuda'))
+/tmp/ipykernel_22/105989898.py:52: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+
+/tmp/ipykernel_22/105989898.py:52: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+/tmp/ipykernel_22/3248129013.py:12: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+
+/tmp/ipykernel_22/3248129013.py:12: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+val_acc=0.9514 val_precision=0.9402 val_recall=0.9391 val_f1=0.9373 time=31.8m
+
+Round 9/50 | clients: [0, 1, 2, 3, 4]
+/tmp/ipykernel_22/105989898.py:39: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=(CFG.amp and device.type == 'cuda'))
+
+/tmp/ipykernel_22/105989898.py:39: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=(CFG.amp and device.type == 'cuda'))
+/tmp/ipykernel_22/105989898.py:52: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+
+/tmp/ipykernel_22/105989898.py:52: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+/tmp/ipykernel_22/3248129013.py:12: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+
+/tmp/ipykernel_22/3248129013.py:12: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+val_acc=0.9568 val_precision=0.9480 val_recall=0.9439 val_f1=0.9451 time=31.8m
+
+Round 10/50 | clients: [0, 1, 2, 3, 4]
+/tmp/ipykernel_22/105989898.py:39: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=(CFG.amp and device.type == 'cuda'))
+
+/tmp/ipykernel_22/105989898.py:39: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=(CFG.amp and device.type == 'cuda'))
+/tmp/ipykernel_22/105989898.py:52: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+
+/tmp/ipykernel_22/105989898.py:52: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+/tmp/ipykernel_22/3248129013.py:12: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+
+/tmp/ipykernel_22/3248129013.py:12: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+val_acc=0.9623 val_precision=0.9578 val_recall=0.9516 val_f1=0.9538 time=31.9m
+
+Round 11/50 | clients: [0, 1, 2, 3, 4]
+/tmp/ipykernel_22/105989898.py:39: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=(CFG.amp and device.type == 'cuda'))
+
+/tmp/ipykernel_22/105989898.py:39: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=(CFG.amp and device.type == 'cuda'))
+/tmp/ipykernel_22/105989898.py:52: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+
+/tmp/ipykernel_22/105989898.py:52: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+/tmp/ipykernel_22/3248129013.py:12: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+
+/tmp/ipykernel_22/3248129013.py:12: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+val_acc=0.9631 val_precision=0.9512 val_recall=0.9528 val_f1=0.9514 time=31.8m
+
+Round 12/50 | clients: [0, 1, 2, 3, 4]
+/tmp/ipykernel_22/105989898.py:39: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=(CFG.amp and device.type == 'cuda'))
+
+/tmp/ipykernel_22/105989898.py:39: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=(CFG.amp and device.type == 'cuda'))
+/tmp/ipykernel_22/105989898.py:52: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+
+/tmp/ipykernel_22/105989898.py:52: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+/tmp/ipykernel_22/3248129013.py:12: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+
+/tmp/ipykernel_22/3248129013.py:12: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+val_acc=0.9660 val_precision=0.9609 val_recall=0.9562 val_f1=0.9575 time=31.8m
+
+Round 13/50 | clients: [0, 1, 2, 3, 4]
+/tmp/ipykernel_22/105989898.py:39: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=(CFG.amp and device.type == 'cuda'))
+
+/tmp/ipykernel_22/105989898.py:39: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=(CFG.amp and device.type == 'cuda'))
+/tmp/ipykernel_22/105989898.py:52: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+
+/tmp/ipykernel_22/105989898.py:52: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+/tmp/ipykernel_22/3248129013.py:12: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+
+/tmp/ipykernel_22/3248129013.py:12: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+val_acc=0.9590 val_precision=0.9482 val_recall=0.9496 val_f1=0.9471 time=31.8m
+
+Round 14/50 | clients: [0, 1, 2, 3, 4]
+/tmp/ipykernel_22/105989898.py:39: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=(CFG.amp and device.type == 'cuda'))
+
+/tmp/ipykernel_22/105989898.py:39: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=(CFG.amp and device.type == 'cuda'))
+/tmp/ipykernel_22/105989898.py:52: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+
+/tmp/ipykernel_22/105989898.py:52: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+/tmp/ipykernel_22/3248129013.py:12: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+
+/tmp/ipykernel_22/3248129013.py:12: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+val_acc=0.9655 val_precision=0.9589 val_recall=0.9553 val_f1=0.9563 time=31.8m
+
+Round 15/50 | clients: [0, 1, 2, 3, 4]
+/tmp/ipykernel_22/105989898.py:39: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=(CFG.amp and device.type == 'cuda'))
+
+/tmp/ipykernel_22/105989898.py:39: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=(CFG.amp and device.type == 'cuda'))
+/tmp/ipykernel_22/105989898.py:52: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+
+/tmp/ipykernel_22/105989898.py:52: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+/tmp/ipykernel_22/3248129013.py:12: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+
+/tmp/ipykernel_22/3248129013.py:12: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+val_acc=0.9649 val_precision=0.9570 val_recall=0.9566 val_f1=0.9558 time=31.8m
+
+Round 16/50 | clients: [0, 1, 2, 3, 4]
+/tmp/ipykernel_22/105989898.py:39: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=(CFG.amp and device.type == 'cuda'))
+
+/tmp/ipykernel_22/105989898.py:39: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=(CFG.amp and device.type == 'cuda'))
+/tmp/ipykernel_22/105989898.py:52: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+
+/tmp/ipykernel_22/105989898.py:52: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+/tmp/ipykernel_22/3248129013.py:12: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+
+/tmp/ipykernel_22/3248129013.py:12: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+val_acc=0.9649 val_precision=0.9556 val_recall=0.9538 val_f1=0.9536 time=31.9m
+
+Round 17/50 | clients: [0, 1, 2, 3, 4]
+/tmp/ipykernel_22/105989898.py:39: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=(CFG.amp and device.type == 'cuda'))
+
+/tmp/ipykernel_22/105989898.py:39: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=(CFG.amp and device.type == 'cuda'))
+/tmp/ipykernel_22/105989898.py:52: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+
+/tmp/ipykernel_22/105989898.py:52: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+/tmp/ipykernel_22/3248129013.py:12: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+
+/tmp/ipykernel_22/3248129013.py:12: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+val_acc=0.9681 val_precision=0.9615 val_recall=0.9566 val_f1=0.9582 time=31.9m
+
+Round 18/50 | clients: [0, 1, 2, 3, 4]
+/tmp/ipykernel_22/105989898.py:39: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=(CFG.amp and device.type == 'cuda'))
+
+/tmp/ipykernel_22/105989898.py:39: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=(CFG.amp and device.type == 'cuda'))
+/tmp/ipykernel_22/105989898.py:52: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+
+/tmp/ipykernel_22/105989898.py:52: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+/tmp/ipykernel_22/3248129013.py:12: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+
+/tmp/ipykernel_22/3248129013.py:12: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+val_acc=0.9723 val_precision=0.9649 val_recall=0.9635 val_f1=0.9636 time=31.9m
+
+Round 19/50 | clients: [0, 1, 2, 3, 4]
+/tmp/ipykernel_22/105989898.py:39: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=(CFG.amp and device.type == 'cuda'))
+
+/tmp/ipykernel_22/105989898.py:39: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=(CFG.amp and device.type == 'cuda'))
+/tmp/ipykernel_22/105989898.py:52: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+
+/tmp/ipykernel_22/105989898.py:52: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+/tmp/ipykernel_22/3248129013.py:12: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+
+/tmp/ipykernel_22/3248129013.py:12: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+val_acc=0.9688 val_precision=0.9619 val_recall=0.9604 val_f1=0.9604 time=31.9m
+
+Round 20/50 | clients: [0, 1, 2, 3, 4]
+/tmp/ipykernel_22/105989898.py:39: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=(CFG.amp and device.type == 'cuda'))
+
+/tmp/ipykernel_22/105989898.py:39: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=(CFG.amp and device.type == 'cuda'))
+/tmp/ipykernel_22/105989898.py:52: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+
+/tmp/ipykernel_22/105989898.py:52: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+/tmp/ipykernel_22/3248129013.py:12: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+
+/tmp/ipykernel_22/3248129013.py:12: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+val_acc=0.9686 val_precision=0.9622 val_recall=0.9575 val_f1=0.9588 time=31.9m
+
+Round 21/50 | clients: [0, 1, 2, 3, 4]
+/tmp/ipykernel_22/105989898.py:39: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=(CFG.amp and device.type == 'cuda'))
+
+/tmp/ipykernel_22/105989898.py:39: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=(CFG.amp and device.type == 'cuda'))
+/tmp/ipykernel_22/105989898.py:52: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+
+/tmp/ipykernel_22/105989898.py:52: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+/tmp/ipykernel_22/3248129013.py:12: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+
+/tmp/ipykernel_22/3248129013.py:12: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+val_acc=0.9721 val_precision=0.9621 val_recall=0.9673 val_f1=0.9641 time=31.9m
+
+Round 22/50 | clients: [0, 1, 2, 3, 4]
+/tmp/ipykernel_22/105989898.py:39: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=(CFG.amp and device.type == 'cuda'))
+
+/tmp/ipykernel_22/105989898.py:39: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=(CFG.amp and device.type == 'cuda'))
+/tmp/ipykernel_22/105989898.py:52: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
+
+/tmp/ipykernel_22/105989898.py:52: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=(CFG.amp and device.type == 'cuda')):
