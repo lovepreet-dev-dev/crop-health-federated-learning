@@ -1,6 +1,6 @@
 # Federated Learning for Plant Disease Detection
 
-Code and experiment logs for the manuscript **"Decentralized Intelligence for Crop Health: Optimized Federated Learning Models for Plant Disease Detection"** by Jaspal Kaur Saini and Lovepreet Sharma (Dr. B. R. Ambedkar National Institute of Technology, Jalandhar).
+Code and experiment logs for the manuscript **"A Comparative Study of Federated Learning Algorithms for Plant Disease Detection under Non-IID Data"** by Jaspal Kaur Saini and Lovepreet Sharma (Dr. B. R. Ambedkar National Institute of Technology, Jalandhar).
 
 The study compares four federated learning (FL) algorithms, **FedAvg**, **FedProx**, **FedMA** and **FedOpt**, for image-based plant disease classification on five public datasets, with data partitioned across clients in a non-IID way to mimic farms in different locations.
 
@@ -105,7 +105,7 @@ If you use this code, please cite the manuscript (full reference to be added on 
 ```bibtex
 @article{saini_sharma_fl_plant_disease,
   author  = {Saini, Jaspal Kaur and Sharma, Lovepreet},
-  title   = {Decentralized Intelligence for Crop Health: Optimized Federated Learning Models for Plant Disease Detection},
+  title   = {A Comparative Study of Federated Learning Algorithms for Plant Disease Detection under Non-IID Data},
   note    = {Manuscript under review},
   year    = {2026}
 }
